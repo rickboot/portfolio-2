@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-color: #040608;
+    --text-color: #e8edf2;
+    --text-dim: rgba(232, 237, 242, 0.42);
+    --text-mid: rgba(232, 237, 242, 0.68);
+  }
+
+  html.light {
+    --bg-color: #f8f9fa;
+    --text-color: #1a1a1a;
+    --text-dim: rgba(26, 26, 26, 0.6);
+    --text-mid: rgba(26, 26, 26, 0.8);
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    @apply overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+
+
+  .text-text {
+    color: var(--text-color);
+  }
+
+  .text-text-dim {
+    color: var(--text-dim);
+  }
+
+  .text-text-mid {
+    color: var(--text-mid);
+  }
+
+  .text-cyan-dim {
+    color: rgba(0, 229, 255, 0.15);
+  }
+
+  html.light .text-cyan-dim {
+    color: rgba(0, 150, 200, 0.3);
+  }
+
+  .text-cyan-glow {
+    color: rgba(0, 229, 255, 0.08);
+  }
+
+  html.light .text-cyan-glow {
+    color: rgba(0, 150, 200, 0.12);
+  }
+
+  .bg-cyan-glow {
+    background-color: rgba(0, 229, 255, 0.08);
+  }
+
+  html.light .bg-cyan-glow {
+    background-color: rgba(0, 150, 200, 0.12);
+  }
+
+  .bg-cyan-dim {
+    background-color: rgba(0, 229, 255, 0.15);
+  }
+
+  html.light .bg-cyan-dim {
+    background-color: rgba(0, 150, 200, 0.2);
+  }
+
+  .border-cyan-dim {
+    border-color: rgba(0, 229, 255, 0.15);
+  }
+
+  html.light .border-cyan-dim {
+    border-color: rgba(0, 150, 200, 0.2);
+  }
+
+  /* Responsive utilities */
+  @media (max-width: 768px) {
+    .proj-row {
+      @apply grid-cols-1;
+    }
+
+    .about {
+      @apply grid-cols-1 gap-12;
+    }
+
+    .exp-item {
+      @apply grid-cols-1 gap-3;
+    }
+  }
+}

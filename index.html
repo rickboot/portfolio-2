@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Rick Allen - Engineer, Product Marketing, AI Infrastructure. Building the thing and telling its story."/>
+<title>Rick Allen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=Bebas+Neue&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<canvas id="waveCanvas"></canvas>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <div class="nav-id">Rick<span>.</span>Allen</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="hero-label">Engineer · Product Marketing · AI Infrastructure</div>
+  <h1 class="hero-title">I build the thing<br>and tell its <em>story</em></h1>
+  <p class="hero-sub">20+ years at the intersection of engineering and product strategy. I write the code, understand the architecture, and translate it into something the market can act on.</p>
+  <div class="hero-cta">
+    <a href="https://drive.google.com/file/d/17BbUlqIwkmL7JTemTS8xkmhlOEqedeq0/view?usp=drive_link" class="primary" target="_blank" rel="noopener noreferrer">Resume</a>
+    <a href="mailto:rickallen@gmail.com">Email</a>
+  </div>
+  <div class="hero-scroll-hint">Scroll</div>
+</section>
+
+<div class="signal-divider"></div>
+
+<!-- ═══ ABOUT ═══ -->
+<section class="about" id="about">
+  <div class="about-left">
+    <div class="section-label">About</div>
+    <h2>The rare overlap<br>between <em>build</em><br>and <em>ship</em></h2>
+  </div>
+  <div class="about-right">
+    <p>Most companies have engineers who build and marketers who position. I do both — and the products are better for it. I can read the engineering specs, ask the right questions, and write the messaging that actually lands. At startups, that means I'm the whole loop. At larger companies, it means I bridge the gap everyone else avoids.</p>
+    <p>Currently shipping an AI memory elasticity platform. Previously at NVIDIA, Lambda Labs, Corsair, and ASUS. Hack Reactor for the engineering fundamentals.</p>
+    <div class="stat-row">
+      <div class="stat">
+        <div class="stat-num">20+</div>
+        <div class="stat-label">Years</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">10+</div>
+        <div class="stat-label">Companies</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">2</div>
+        <div class="stat-label">Skill Sets</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="signal-divider"></div>
+
+<!-- ═══ PROJECTS ═══ -->
+<section class="projects" id="projects">
+  <div class="projects-header">
+    <div class="section-label">Projects</div>
+    <h2>What I've <em>built</em></h2>
+  </div>
+  <div class="proj-narrative">The problem · the tool · the product</div>
+
+  <!-- 1. mktg-rag — the problem in action -->
+  <div class="proj-featured">
+    <div class="proj-featured-top">
+      <div class="proj-featured-left">
+        <span class="proj-tag">AI · RAG · Multi-Model</span>
+      </div>
+    </div>
+    <h3>Marketing Intelligence Platform</h3>
+    <p>A full-stack AI workload that does what real marketing analysts do — ingest competitive signals, run multi-step analysis across text, images, and video, and surface actionable intelligence. The real engineering challenge: it creates genuine memory pressure by swapping between Llama 3.1 and LLaVA on demand, managing a growing ChromaDB vector store, and streaming live telemetry. Built as a demo and testbed for aiDAPTIV+ memory elasticity, but the platform itself is production-architecture: FastAPI backend, WebSocket streaming, RAG with context pruning, crash detection tied to real swap deltas. 87 documents processed per run. CES 2026 competitive data already in the corpus.</p>
+    <div class="proj-links">
+      <a href="https://github.com/rickboot/mktg-rag" target="_blank" rel="noopener noreferrer" class="proj-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        GitHub
+      </a>
+    </div>
+    <div class="proj-stack">
+      <span>Python</span><span>FastAPI</span><span>React 19</span><span>TypeScript</span>
+      <span>Ollama</span><span>ChromaDB</span><span>RAG</span><span>WebSocket</span>
+      <span>Llama 3.1</span><span>LLaVA</span><span>psutil</span><span>Vite</span>
+    </div>
+  </div>
+
+  <!-- 2 + 3. ai-calc and ShadowForge -->
+  <div class="proj-row">
+    <!-- ai-calc -->
+    <div class="proj-card">
+      <div class="proj-card-top">
+        <div style="display:flex; gap:8px; align-items:center;">
+          <span class="proj-tag">AI · Infrastructure</span>
+          <span class="proj-tag wip">WIP</span>
+        </div>
+        <span class="proj-arrow">↗</span>
+      </div>
+      <h3>AI Resource Estimator</h3>
+      <p>A VRAM and performance calculator for LLM inference pipelines. Not a toy — it models KV cache scaling, multi-GPU topology, CPU offload penalties, quantization tradeoffs, and multi-stage pipeline orchestration (RAG, vision, agentic workflows). Built because I needed to understand memory pressure before I could demo it. Live on Vercel, roadmap in the repo.</p>
+      <div class="proj-links" style="margin-top:20px;">
+        <a href="https://github.com/rickboot/ai-calc" target="_blank" rel="noopener noreferrer" class="proj-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+        <a href="https://ai-calc-flame.vercel.app" target="_blank" rel="noopener noreferrer" class="proj-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Live
+        </a>
+      </div>
+      <div class="proj-stack">
+        <span>TypeScript</span><span>React</span><span>Vite</span><span>VRAM Modeling</span><span>KV Cache</span>
+      </div>
+    </div>
+
+    <!-- ShadowForge -->
+    <div class="proj-card">
+      <div class="proj-card-top">
+        <span class="proj-tag">AI · RPG · Consumer</span>
+        <span class="proj-arrow">↗</span>
+      </div>
+      <h3>ShadowForge</h3>
+      <p>Converts D&D 5e adventures into Shadowdark RPG format using OpenAI. Real users, real use case — the tabletop RPG community needed this and nobody had built it. Token-aware chunking, markdown output, client-side token tracking. The project where I closed the full loop: identified the gap, scoped the product, built it, shipped it, people use it.</p>
+      <div class="proj-links" style="margin-top:20px;">
+        <a href="https://github.com/rickboot/ShadowForge" target="_blank" rel="noopener noreferrer" class="proj-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+        <a href="https://shadow-forge.vercel.app" target="_blank" rel="noopener noreferrer" class="proj-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Live
+        </a>
+      </div>
+      <div class="proj-stack">
+        <span>Next.js</span><span>TypeScript</span><span>Tailwind v4</span><span>OpenAI</span><span>LLM</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="signal-divider"></div>
+
+<!-- ═══ SKILLS ═══ -->
+<section class="skills" id="skills">
+  <div class="section-label">Skills</div>
+  <div class="skills-grid">
+    <div class="skill-item">React</div>
+    <div class="skill-item">Next.js</div>
+    <div class="skill-item">TypeScript</div>
+    <div class="skill-item">Node.js</div>
+    <div class="skill-item">Python</div>
+    <div class="skill-item">FastAPI</div>
+    <div class="skill-item">HTML / CSS</div>
+    <div class="skill-item">JavaScript</div>
+    <div class="skill-item">Tailwind CSS</div>
+    <div class="skill-item">Git</div>
+    <div class="skill-item">MongoDB</div>
+    <div class="skill-item">PostgreSQL</div>
+    <div class="skill-item">Redux</div>
+    <div class="skill-item">Express</div>
+    <div class="skill-item">Docker</div>
+    <div class="skill-item">AWS</div>
+    <div class="skill-item">Prisma</div>
+    <div class="skill-item">Framer Motion</div>
+    <div class="skill-item">OpenAI API</div>
+    <div class="skill-item">Ollama</div>
+    <div class="skill-item">ChromaDB</div>
+    <div class="skill-item">RAG</div>
+    <div class="skill-item">WebSocket</div>
+    <div class="skill-item">Vite</div>
+  </div>
+</section>
+
+<div class="signal-divider"></div>
+
+<!-- ═══ EXPERIENCE ═══ -->
+<section class="experience" id="experience">
+  <div class="section-label">Experience</div>
+  <div class="exp-grid">
+
+    <div class="exp-item">
+      <div class="exp-years">Dec 2025 — Present</div>
+      <div class="exp-content">
+        <h3>Product Marketing Leader, AI Infrastructure</h3>
+        <p>Go-to-market for aiDAPTIV+ memory elasticity platform. Technical demos, benchmark tooling, and ISV partnership proof materials. GTC 2026 launch planning, competitive intelligence from CES keynotes.</p>
+      </div>
+      <div class="exp-company">Phison</div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-years">Jan 2024 — Jan 2025</div>
+      <div class="exp-content">
+        <h3>Product & Go-to-Market Advisor</h3>
+        <p>Repositioned MVP into a generative AI marketing platform for small businesses, driving company pivot and renewed investor interest. Defined PRDs, roadmap, and LLM-powered workflows with ML and engineering teams. Messaging and positioning for AI campaign automation — A/B testing, budget allocation, channel mix. Supported alpha delivery used by pilot merchants generating live campaigns across Meta.</p>
+      </div>
+      <div class="exp-company">Solver AI</div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-years">Jun 2021 — Jun 2022</div>
+      <div class="exp-content">
+        <h3>Director of Marketing, Deep Learning Infrastructure</h3>
+        <p>Go-to-market and demand generation for GPU cloud and AI infrastructure, managing a $3M annual marketing budget. Launched Tensorbook AI workstation with coordinated PR across Digital Trends, TechRepublic, NotebookCheck. Initiated technical influencer partnerships with Lex Fridman and Jeff Geerling to build developer and researcher demand.</p>
+      </div>
+      <div class="exp-company">Lambda Labs</div>
+    </div>
+
+    <div class="exp-item eng">
+      <div class="exp-years">Jan 2021 — Jul 2021</div>
+      <div class="exp-content">
+        <h3>Mobile Software Engineer</h3>
+        <p>Cross-platform iOS/Android application — Flutter and Firebase in an early-stage startup environment.</p>
+      </div>
+      <div class="exp-company">Revery Labs</div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-years">Jan 2018 — Dec 2019</div>
+      <div class="exp-content">
+        <h3>Head of Product Marketing, HALO Autonomous Vehicle SDK</h3>
+        <p>Launched SDK with API documentation and runtime tools supporting OEM autonomous vehicle pilots. Defined technical messaging and platform positioning for enterprise automotive customers.</p>
+      </div>
+      <div class="exp-company">Tensyr</div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-years">Dec 2015 — Jan 2018</div>
+      <div class="exp-content">
+        <h3>Product & Marketing Strategy Consultant</h3>
+        <p>Generated 120+ media articles and 30+ product reviews through PR and influencer outreach. Built competitive positioning frameworks, messaging architectures, and GTM strategies for hardware companies.</p>
+      </div>
+      <div class="exp-company">Independent</div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-years">1994 — 2008</div>
+      <div class="exp-content">
+        <h3>Leadership — GPU, PC Hardware & Semiconductors</h3>
+        <p>Product marketing and GTM across NVIDIA, ASUS, Corsair, Trident Microsystems, and S3 Graphics. OEM partnership management, large-scale hardware launches, and semiconductor platform positioning across 14 years.</p>
+      </div>
+      <div class="exp-company" style="white-space:normal; text-align:right; max-width:140px; line-height:1.5;">NVIDIA · ASUS · Corsair · Trident · S3</div>
+    </div>
+
+  </div>
+</section>
+
+<div class="signal-divider"></div>
+
+<!-- ═══ CONTACT ═══ -->
+<section class="contact" id="contact">
+  <div class="section-label" style="justify-content:center;">Contact</div>
+  <h2>Let's <em>talk</em></h2>
+  <p>Happy to talk about AI infrastructure, product marketing strategy, AI/web development, or anything at the intersection of the two. Or trade dad jokes.</p>
+  <div class="contact-links">
+    <a href="mailto:rickallen@gmail.com" class="contact-link primary">Email</a>
+    <a href="https://www.linkedin.com/in/rallen7" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn</a>
+    <a href="https://github.com/rickboot" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub</a>
+    <a href="https://drive.google.com/file/d/17BbUlqIwkmL7JTemTS8xkmhlOEqedeq0/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="contact-link">Resume</a>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Rick Allen</span>
+  <span>rickallen.dev</span>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

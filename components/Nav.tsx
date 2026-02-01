@@ -25,7 +25,7 @@ export default function Nav() {
   ]
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-[100] px-12 py-7 flex items-center justify-between max-md:px-6 max-md:py-5">
+    <nav className="fixed top-0 left-0 w-full z-[100] px-12 py-7 flex items-center justify-between max-md:px-6 max-md:py-5 backdrop-blur-md border-b nav-border">
       <div className="font-mono text-[13px] font-normal text-text uppercase tracking-[0.08em] relative z-[102]">
         Rick<span className="text-cyan">.</span>Allen
       </div>

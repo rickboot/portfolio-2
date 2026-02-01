@@ -1,3 +1,5 @@
+import Button from './Button'
+
 export default function Contact() {
   return (
     <section
@@ -15,29 +17,23 @@ export default function Contact() {
         Happy to talk about AI infrastructure, product marketing strategy, AI/web development, or anything at the intersection of the two. Or trade dad jokes.
       </p>
       <div className="contact-links flex justify-center gap-4 flex-wrap">
-        <a
-          href="mailto:rickallen@gmail.com"
-          className="contact-link primary font-mono text-[11px] text-cyan no-underline tracking-[0.08em] uppercase border border-cyan px-6 py-3 rounded-md transition-all duration-300 hover:bg-cyan hover:text-bg"
-        >
+        <Button href="mailto:rickallen@gmail.com">
           Email
-        </a>
-        <a
+        </Button>
+        <Button
           href="https://www.linkedin.com/in/rickallen7/"
           target="_blank"
           rel="noopener noreferrer"
-          className="contact-link font-mono text-[11px] text-text no-underline tracking-[0.08em] uppercase border border-[rgba(232,237,242,0.18)] px-6 py-3 rounded-md transition-all duration-300 hover:border-cyan hover:text-cyan hover:bg-cyan-glow"
         >
           LinkedIn
-        </a>
-        <a
+        </Button>
+        <Button
           href="https://github.com/rickboot"
           target="_blank"
           rel="noopener noreferrer"
-          className="contact-link font-mono text-[11px] text-text no-underline tracking-[0.08em] uppercase border border-[rgba(232,237,242,0.18)] px-6 py-3 rounded-md transition-all duration-300 hover:border-cyan hover:text-cyan hover:bg-cyan-glow"
         >
           GitHub
-        </a>
-
+        </Button>
       </div>
     </section>
   )

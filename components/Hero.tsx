@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Button from './Button'
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -40,13 +41,13 @@ export default function Hero() {
           className="font-mono text-[11px] text-cyan tracking-[0.2em] uppercase mb-6 flex items-center gap-3"
         >
           <div className="w-6 h-px bg-cyan" />
-          Engineer · Product Marketing · AI Infrastructure
+          SW Engineering · Product Marketing · AI Infrastructure
         </motion.div>
 
         {/* Title */}
         <motion.h1
           variants={itemVariants}
-          className="font-display text-[clamp(72px,11vw,148px)] leading-[0.9] tracking-[-0.02em] text-text max-w-[900px]"
+          className="font-display text-[clamp(56px,8vw,112px)] leading-[0.9] tracking-[-0.02em] text-text max-w-[900px]"
         >
           I build the thing<br />
           and tell its <em className="not-italic text-cyan">story</em>
@@ -62,19 +63,23 @@ export default function Hero() {
 
         {/* CTA */}
         <motion.div variants={itemVariants} className="mt-12 flex gap-4 items-center">
-          <a
-            href="mailto:rickallen@gmail.com"
-            className="font-mono text-[11px] font-normal text-text no-underline tracking-[0.1em] uppercase border border-[rgba(232,237,242,0.2)] px-6 py-3 rounded-md transition-all duration-300 hover:border-cyan hover:text-cyan hover:bg-cyan-glow"
-          >
+          <Button href="mailto:rickallen@gmail.com">
             Email
-          </a>
-          <a
-            href="https://drive.google.com/file/d/17BbUlqIwkmL7JTemTS8xkmhlOEqedeq0/view?usp=drive_link"
+          </Button>
+          <Button
+            href="https://www.linkedin.com/in/rickallen7/"
             target="_blank"
-            className="font-mono text-[11px] font-normal text-cyan no-underline tracking-[0.1em] uppercase border border-cyan px-6 py-3 rounded-md transition-all duration-300 hover:bg-cyan hover:text-bg shadow-[0_0_10px_rgba(0,229,255,0.1)] hover:shadow-[0_0_20px_rgba(0,229,255,0.4)]"
+            rel="noopener noreferrer"
           >
-            Resume
-          </a>
+            LinkedIn
+          </Button>
+          <Button
+            href="https://github.com/rickboot"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </Button>
         </motion.div>
       </motion.div>
 

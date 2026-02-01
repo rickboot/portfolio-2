@@ -20,7 +20,7 @@ export default function WaveCanvas() {
 
     const rng = createMulberry32(7)
 
-    const NUM_ROWS = 80
+    const NUM_ROWS = 40;
     const NUM_SAMPLES = 160
 
     interface Row {
@@ -137,7 +137,8 @@ export default function WaveCanvas() {
       const strokeColor = theme === 'dark' ? 'rgba(0,229,255,' : 'rgba(0,150,200,'
       const fillColor = theme === 'dark' ? 'rgba(4,6,8,1)' : 'rgba(248,249,250,1)'
 
-      for (let row = NUM_ROWS - 1; row >= 0; row--) {
+      // 3. Draw Back-to-Front (Top-to-Bottom) so lower rows occlude higher rows
+      for (let row = 0; row < NUM_ROWS; row++) {
         const baseY = startY + row * rowH
         const r = rows[row]
         const { breathL, breathC, breathT, shockBoost, surgeBoost } =
@@ -165,19 +166,21 @@ export default function WaveCanvas() {
           points.push({ x: startX + nx * gridW, y: baseY - val * peakH })
         }
 
-        const prevBaseY = startY + (row - 1) * rowH
+        // Opaque fill: fills from the line down to the bottom of the screen
         ctx.beginPath()
-        ctx.moveTo(points[0].x, baseY)
-        for (let i = 0; i < points.length; i++) {
-          ctx.lineTo(points[i].x, Math.max(points[i].y, prevBaseY))
+        ctx.moveTo(points[0].x, points[0].y)
+        for (let i = 1; i < points.length; i++) {
+          ctx.lineTo(points[i].x, points[i].y)
         }
-        ctx.lineTo(points[points.length - 1].x, baseY)
+        // Extend down WAY below the bottom of the canvas to create a solid "wall"
+        ctx.lineTo(points[points.length - 1].x, H + 500)
+        ctx.lineTo(points[0].x, H + 500)
         ctx.closePath()
         ctx.fillStyle = fillColor
         ctx.fill()
 
         const bright = Math.min(
-          1,
+          0.6,
           perspAlpha + shockBoost * 0.5 + surgeBoost * 0.4
         )
         ctx.lineWidth = perspWidth
@@ -199,7 +202,7 @@ export default function WaveCanvas() {
       t += dt
       const sec = now / 1000
 
-      if (sec - lastShock > 2.5 + Math.sin(t * 0.7) * 0.75) {
+      if (sec - lastShock > 5.0 + Math.sin(t * 0.7) * 0.75) {
         shockwaves.push({ pos: 0, age: 0 })
         lastShock = sec
       }

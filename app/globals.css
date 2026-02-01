@@ -83,6 +83,44 @@
     border-color: rgba(0, 150, 200, 0.2);
   }
 
+  /* Cyan text color - darker in light mode for better readability */
+  html.light .text-cyan {
+    color: #0096c8;
+  }
+
+  /* Cyan background - darker in light mode for better visibility */
+  html.light .bg-cyan {
+    background-color: #0096c8;
+  }
+
+  /* Button borders */
+  .btn-border-primary {
+    border-color: rgba(0, 229, 255, 0.4);
+  }
+
+  html.light .btn-border-primary {
+    border-color: #0096c8;
+  }
+
+  .btn-border-secondary {
+    border-color: rgba(232, 237, 242, 0.25);
+  }
+
+  html.light .btn-border-secondary {
+    border-color: rgba(26, 26, 26, 0.2);
+  }
+
+  /* Navigation background with backdrop blur */
+  .nav-border {
+    background-color: rgba(4, 6, 8, 0.8);
+    border-color: rgba(232, 237, 242, 0.08);
+  }
+
+  html.light .nav-border {
+    background-color: rgba(248, 249, 250, 0.8);
+    border-color: rgba(26, 26, 26, 0.08);
+  }
+
   /* Responsive utilities */
   @media (max-width: 768px) {
     .proj-row {

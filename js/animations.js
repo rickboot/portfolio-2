@@ -18,7 +18,7 @@
     return Math.exp(-0.5 * ((x - mu) / sigma) ** 2);
   }
 
-  const NUM_ROWS = 80;
+  const NUM_ROWS = 40;
   const NUM_SAMPLES = 160;
 
   // Per-row baked constants: unique frequencies, phases, base amplitudes
@@ -98,7 +98,8 @@
     const startY = (H - gridH) / 2;
 
 
-    for (let row = NUM_ROWS - 1; row >= 0; row--) {
+    // Draw Back-to-Front (Top-to-Bottom) so lower rows occlude higher rows
+    for (let row = 0; row < NUM_ROWS; row++) {
       const baseY = startY + row * rowH;
       const r = rows[row];
       const { breathL, breathC, breathT, shockBoost, surgeBoost } = getRowScale(row, now);
@@ -115,13 +116,13 @@
         const nx = i / NUM_SAMPLES;
         // Edge envelope: fade to 0 at tips
         const edge = Math.min(nx / 0.04, (1 - nx) / 0.04, 1);
-        // Signal: the 3 Gaussian peaks, clamped clean
+        // Signal: the 3 Gaussian peaks
         let signal = 0;
         signal += r.lAmp * breathL * totalScale * gaussian(nx, r.lMu, r.lSig);
         signal += r.cAmp * breathC * totalScale * gaussian(nx, r.cMu, r.cSig);
         signal += r.tAmp * breathT * totalScale * gaussian(nx, r.tMu, r.tSig);
         signal = Math.max(signal, 0);
-        // Noise: always positive, added on top so it never breaks the line
+        // Noise: always positive, added on top
         let noise = 0;
         for (const n of r.noiseFreqs) noise += n.amp * Math.sin(nx * Math.PI * n.freq + n.phase);
         noise = Math.abs(noise) * 0.6; // rectified, scaled down
@@ -129,16 +130,21 @@
         points.push({ x: startX + nx * gridW, y: baseY - val * peakH });
       }
 
-      // Opaque fill: trace down to baseY, but cap fill top at previous row's baseline
-      // so this row's fill never reaches into the row above and covers its stroke
-      const prevBaseY = startY + (row - 1) * rowH;
+      // Opaque fill: fills from the line down to the bottom of the screen
+      // This is the robust "Painter's Algorithm" approach for 3D terrain:
+      // drawing Back-to-Front, each new row covers everything behind it.
       ctx.beginPath();
-      ctx.moveTo(points[0].x, baseY);
-      for (let i = 0; i < points.length; i++) {
-        ctx.lineTo(points[i].x, Math.max(points[i].y, prevBaseY));
+      ctx.moveTo(points[0].x, points[0].y);
+      for (let i = 1; i < points.length; i++) {
+        ctx.lineTo(points[i].x, points[i].y);
       }
-      ctx.lineTo(points[points.length - 1].x, baseY);
+      // Extend down WAY below the bottom of the canvas to create a solid "wall"
+      // The previous 'H' limit was occasionally exposing gaps during rotation.
+      ctx.lineTo(points[points.length - 1].x, H + 500); 
+      ctx.lineTo(points[0].x, H + 500);
       ctx.closePath();
+      
+      // Use the background color to "erase" what's behind
       ctx.fillStyle = 'rgba(4,6,8,1)';
       ctx.fill();
 

@@ -1,6 +1,7 @@
 'use client'
  
 import { motion } from 'framer-motion'
+import Button from './Button'
  
 interface ProjectLink {
   href: string
@@ -100,12 +101,13 @@ function ProjectCard({ project }: { project: Project }) {
         </p>
         <div className="proj-links flex gap-3 mt-7 flex-wrap relative z-10">
           {project.links.map((link, idx) => (
-            <a
+            <Button
               key={idx}
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="proj-link font-mono text-[10px] text-text-dim no-underline tracking-[0.1em] uppercase border border-[rgba(232,237,242,0.12)] px-4 py-2 rounded-md transition-all duration-300 flex items-center gap-1.5 hover:border-cyan hover:text-cyan hover:bg-cyan-glow"
+              variant="secondary"
+              className="px-4 py-2 flex items-center gap-1.5 text-[10px]"
             >
               {link.icon === 'github' ? (
                 <svg
@@ -131,7 +133,7 @@ function ProjectCard({ project }: { project: Project }) {
                 </svg>
               )}
               {link.label}
-            </a>
+            </Button>
           ))}
         </div>
         <div className="proj-stack flex flex-wrap gap-1.5 mt-6 relative z-10">
@@ -189,12 +191,13 @@ function ProjectCard({ project }: { project: Project }) {
       </p>
       <div className="proj-links flex gap-3 mt-5 flex-wrap relative z-10">
         {project.links.map((link, idx) => (
-          <a
+          <Button
             key={idx}
             href={link.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="proj-link font-mono text-[10px] text-text-dim no-underline tracking-[0.1em] uppercase border border-[rgba(232,237,242,0.12)] px-4 py-2 rounded-md transition-all duration-300 flex items-center gap-1.5 hover:border-cyan hover:text-cyan hover:bg-cyan-glow"
+            variant="secondary"
+            className="px-4 py-2 flex items-center gap-1.5 text-[10px]"
           >
             {link.icon === 'github' ? (
               <svg
@@ -220,7 +223,7 @@ function ProjectCard({ project }: { project: Project }) {
               </svg>
             )}
             {link.label}
-          </a>
+          </Button>
         ))}
       </div>
       <div className="proj-stack flex flex-wrap gap-1.5 mt-6 relative z-10">

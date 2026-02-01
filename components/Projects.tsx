@@ -1,6 +1,7 @@
 'use client'
  
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import Button from './Button'
  
 interface ProjectLink {
@@ -17,6 +18,7 @@ interface Project {
   stack: string[]
   featured?: boolean
   wip?: boolean
+  image?: string
 }
  
 const projects: Project[] = [
@@ -55,6 +57,7 @@ const projects: Project[] = [
     ],
     stack: ['TypeScript', 'React', 'Vite', 'VRAM Modeling', 'KV Cache'],
     wip: true,
+    image: '/images/ai-calc.png',
   },
   {
     title: 'ShadowForge',
@@ -66,6 +69,7 @@ const projects: Project[] = [
       { href: 'https://shadow-forge.vercel.app', label: 'Live', icon: 'external' },
     ],
     stack: ['Next.js', 'TypeScript', 'Tailwind v4', 'OpenAI', 'LLM'],
+    image: '/images/shadowforge.png',
   },
 ]
  
@@ -78,7 +82,7 @@ function ProjectCard({ project }: { project: Project }) {
         viewport={{ once: true, margin: '-100px' }}
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as const }}
         whileHover={{ scale: 1.01 }}
-        className="proj-featured border border-[rgba(232,237,242,0.08)] rounded-2xl p-12 bg-[rgba(232,237,242,0.02)] mb-6 hover:border-cyan-dim hover:bg-cyan-glow max-md:p-8 max-md:px-6 relative group"
+        className="proj-featured border border-[rgba(232,237,242,0.08)] rounded-2xl p-12 bg-[rgba(232,237,242,0.02)] mb-6 hover:border-cyan-dim hover:bg-cyan-glow max-md:p-8 max-md:px-6 relative group overflow-hidden"
       >
         <div className="absolute inset-0 bg-cyan-glow opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl pointer-events-none" />
         <div className="proj-featured-top flex justify-between items-start mb-6">
@@ -157,84 +161,100 @@ function ProjectCard({ project }: { project: Project }) {
       viewport={{ once: true, margin: '-100px' }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
       whileHover={{ scale: 1.02 }}
-      className="proj-card border border-[rgba(232,237,242,0.08)] rounded-xl p-9 bg-[rgba(232,237,242,0.02)] cursor-pointer hover:border-cyan-dim hover:bg-cyan-glow group max-md:p-7 max-md:px-6 relative text-left"
+      className="proj-card border border-[rgba(232,237,242,0.08)] rounded-xl p-0 bg-[rgba(232,237,242,0.02)] cursor-pointer hover:border-cyan-dim hover:bg-cyan-glow group max-md:p-0 relative text-left overflow-hidden flex flex-col"
     >
       <div className="absolute inset-0 bg-cyan-glow opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl pointer-events-none" />
- 
-      <div className="proj-card-top flex justify-between items-start mb-5">
-        <div className="flex gap-2 items-center">
-          {project.tags.map((tag, idx) => (
+      
+      {/* Project Image */}
+      {project.image && (
+        <div className="relative w-full h-48 overflow-hidden rounded-t-xl">
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[rgba(4,6,8,0.6)] via-transparent to-transparent [html.light_&]:from-[rgba(248,249,250,0.6)]" />
+        </div>
+      )}
+
+      <div className="p-9 max-md:p-7 max-md:px-6 flex-1 flex flex-col">
+        <div className="proj-card-top flex justify-between items-start mb-5">
+          <div className="flex gap-2 items-center">
+            {project.tags.map((tag, idx) => (
+              <span
+                key={idx}
+                className={`font-mono text-[9px] text-cyan tracking-[0.16em] uppercase bg-cyan-dim px-2.5 py-1 rounded-[20px] ${
+                  project.wip ? 'bg-[rgba(255,170,0,0.12)] text-[#ffaa00]' : ''
+                }`}
+              >
+                {tag}
+              </span>
+            ))}
+            {project.wip && (
+              <span className="font-mono text-[9px] text-[#ffaa00] tracking-[0.16em] uppercase bg-[rgba(255,170,0,0.12)] px-2.5 py-1 rounded-[20px]">
+                WIP
+              </span>
+            )}
+          </div>
+          <span className="proj-arrow text-text-dim text-lg transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-cyan">
+            ↗
+          </span>
+        </div>
+        <h3 className="font-body text-xl font-medium text-text mb-2.5">
+          {project.title}
+        </h3>
+        <p className="text-[13px] font-light text-text-dim leading-relaxed flex-1">
+          {project.description}
+        </p>
+        <div className="proj-links flex gap-3 mt-5 flex-wrap relative z-10">
+          {project.links.map((link, idx) => (
+            <Button
+              key={idx}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="secondary"
+              className="px-4 py-2 flex items-center gap-1.5 text-[10px]"
+            >
+              {link.icon === 'github' ? (
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  className="w-3 h-3 opacity-60"
+                >
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg>
+              ) : (
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  className="w-3 h-3 opacity-60"
+                >
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              )}
+              {link.label}
+            </Button>
+          ))}
+        </div>
+        <div className="proj-stack flex flex-wrap gap-1.5 mt-6 relative z-10">
+          {project.stack.map((tech, idx) => (
             <span
               key={idx}
-              className={`font-mono text-[9px] text-cyan tracking-[0.16em] uppercase bg-cyan-dim px-2.5 py-1 rounded-[20px] ${
-                project.wip ? 'bg-[rgba(255,170,0,0.12)] text-[#ffaa00]' : ''
-              }`}
+              className="font-mono text-[9px] text-text-dim tracking-[0.06em] border border-[rgba(232,237,242,0.1)] px-2 py-0.5 rounded"
             >
-              {tag}
+              {tech}
             </span>
           ))}
-          {project.wip && (
-            <span className="font-mono text-[9px] text-[#ffaa00] tracking-[0.16em] uppercase bg-[rgba(255,170,0,0.12)] px-2.5 py-1 rounded-[20px]">
-              WIP
-            </span>
-          )}
         </div>
-        <span className="proj-arrow text-text-dim text-lg transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-cyan">
-          ↗
-        </span>
-      </div>
-      <h3 className="font-body text-xl font-medium text-text mb-2.5">
-        {project.title}
-      </h3>
-      <p className="text-[13px] font-light text-text-dim leading-relaxed">
-        {project.description}
-      </p>
-      <div className="proj-links flex gap-3 mt-5 flex-wrap relative z-10">
-        {project.links.map((link, idx) => (
-          <Button
-            key={idx}
-            href={link.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            variant="secondary"
-            className="px-4 py-2 flex items-center gap-1.5 text-[10px]"
-          >
-            {link.icon === 'github' ? (
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                className="w-3 h-3 opacity-60"
-              >
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-              </svg>
-            ) : (
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                className="w-3 h-3 opacity-60"
-              >
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                <polyline points="15 3 21 3 21 9" />
-                <line x1="10" y1="14" x2="21" y2="3" />
-              </svg>
-            )}
-            {link.label}
-          </Button>
-        ))}
-      </div>
-      <div className="proj-stack flex flex-wrap gap-1.5 mt-6 relative z-10">
-        {project.stack.map((tech, idx) => (
-          <span
-            key={idx}
-            className="font-mono text-[9px] text-text-dim tracking-[0.06em] border border-[rgba(232,237,242,0.1)] px-2 py-0.5 rounded"
-          >
-            {tech}
-          </span>
-        ))}
       </div>
     </motion.div>
   )

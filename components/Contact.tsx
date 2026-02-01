@@ -14,7 +14,7 @@ export default function Contact() {
         Let&apos;s <em className="not-italic text-cyan">talk</em>
       </h2>
       <p className="text-[15px] font-light text-text-mid mb-11 leading-relaxed">
-        Happy to talk about AI infrastructure, product marketing strategy, AI/web development, or anything at the intersection of the two. Or trade dad jokes.
+        Happy to talk about AI infrastructure, product marketing strategy, AI/web development, or anything at the intersection of the two. Or you want to debate whether you are likely to be eaten by a grue in dark mode. Either way, I&apos;m in.
       </p>
       <div className="contact-links flex justify-center gap-4 flex-wrap">
         <Button href="mailto:rickallen@gmail.com" variant="primary">

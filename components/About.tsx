@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+
 import Image from 'next/image'
 
 export default function About() {
@@ -29,10 +29,13 @@ export default function About() {
       </div>
       <div className="about-right flex flex-col justify-center gap-7">
         <p className="text-[15px] font-light leading-[1.75] text-text-mid">
-          Most companies have engineers who build and marketers who position. I do both — and the products are better for it. I can read the engineering specs, ask the right questions, and write the messaging that actually lands. At startups, that means I'm the whole loop. At larger companies, it means I bridge the gap everyone else avoids.
+          I&apos;ve spent two decades in roles that don&apos;t usually overlap — someone who can follow the engineering, understand what&apos;s actually being built, and translate that into messaging and strategy that lands. At startups that meant wearing every hat. At larger companies it meant bridging the gap between teams.
         </p>
         <p className="text-[15px] font-light leading-[1.75] text-text-mid">
-          Currently shipping an AI memory elasticity platform. Previously at NVIDIA, Lambda Labs, Corsair, and ASUS. Hack Reactor for the engineering fundamentals.
+          I code, I architect, and I use AI tools to move faster. The product decisions, the tradeoffs, the positioning — that&apos;s still where the work is.
+        </p>
+        <p className="text-[15px] font-light leading-[1.75] text-text-mid">
+          Currently working on AI memory elasticity at Phison. Previously at NVIDIA, Lambda Labs, Corsair, and ASUS. Hack Reactor for the engineering foundation.
         </p>
         <div className="stat-row flex gap-12 mt-3 max-md:gap-8">
           <div className="stat flex flex-col gap-1">

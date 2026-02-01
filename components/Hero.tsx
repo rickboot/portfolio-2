@@ -49,8 +49,8 @@ export default function Hero() {
           variants={itemVariants}
           className="font-display text-[clamp(56px,8vw,112px)] leading-[0.9] tracking-[-0.02em] text-text max-w-[900px]"
         >
-          I build the thing<br />
-          and tell its <em className="not-italic text-cyan">story</em>
+          I build things<br />
+          and tell their <em className="not-italic text-cyan">stories</em>
         </motion.h1>
 
         {/* Subtitle */}
@@ -58,11 +58,12 @@ export default function Hero() {
           variants={itemVariants}
           className="mt-9 max-w-[440px] text-base font-light leading-relaxed text-text-mid tracking-[0.01em]"
         >
-          20+ years at the intersection of engineering and product strategy. I write the code, understand the architecture, and translate it into something the market can act on.
+          20+ years across engineering and product strategy. I code, I architect, and I take products to market. AI tools accelerate the build — the product thinking is still hands-on.
         </motion.p>
 
         {/* CTA */}
         <motion.div variants={itemVariants} className="mt-12 flex gap-4 items-center">
+
           <Button href="mailto:rickallen@gmail.com">
             Email
           </Button>

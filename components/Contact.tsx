@@ -11,13 +11,13 @@ export default function Contact() {
         Contact
       </div>
       <h2 className="font-display text-[clamp(42px,7vw,80px)] leading-none text-text mb-6">
-        Let's <em className="not-italic text-cyan">talk</em>
+        Let&apos;s <em className="not-italic text-cyan">talk</em>
       </h2>
       <p className="text-[15px] font-light text-text-mid mb-11 leading-relaxed">
         Happy to talk about AI infrastructure, product marketing strategy, AI/web development, or anything at the intersection of the two. Or trade dad jokes.
       </p>
       <div className="contact-links flex justify-center gap-4 flex-wrap">
-        <Button href="mailto:rickallen@gmail.com">
+        <Button href="mailto:rickallen@gmail.com" variant="primary">
           Email
         </Button>
         <Button
@@ -34,6 +34,7 @@ export default function Contact() {
         >
           GitHub
         </Button>
+
       </div>
     </section>
   )

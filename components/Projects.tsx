@@ -25,7 +25,7 @@ const projects: Project[] = [
   {
     title: 'Marketing Intelligence Platform',
     description:
-      'A full-stack AI workload that does what real marketing analysts do — ingest competitive signals, run multi-step analysis across text, images, and video, and surface actionable intelligence. The real engineering challenge: it creates genuine memory pressure by swapping between Llama 3.1 and LLaVA on demand, managing a growing ChromaDB vector store, and streaming live telemetry. Built as a demo and testbed for aiDAPTIV+ memory elasticity, but the platform itself is production-architecture: FastAPI backend, WebSocket streaming, RAG with context pruning, crash detection tied to real swap deltas. 87 documents processed per run. CES 2026 competitive data already in the corpus.',
+      "Built to solve a real problem: how do you validate that AI workloads actually create memory pressure under production conditions? This isn&apos;t a mock or a simulation — it ingests real competitive data (CES 2026 corpus, 87 documents), swaps live between Llama 3.1 and LLaVA on demand, and streams telemetry as the memory pressure builds in real time. The engineering was the means, not the point. The point was proving that multi-model AI workloads genuinely stress GPU memory in ways the market hasn&apos;t fully reckoned with yet. FastAPI backend, WebSocket streaming, RAG with context pruning, crash detection tied to real swap deltas.",
     tags: ['AI', 'RAG', 'Multi-Model'],
     links: [
       { href: 'https://github.com/rickboot/mktg-rag', label: 'GitHub', icon: 'github' },
@@ -287,7 +287,7 @@ export default function Projects() {
            transition={{ duration: 0.6, delay: 0.1 }}
            className="font-display text-[clamp(36px,5vw,58px)] leading-[1.05] text-text"
         >
-          What I've <em className="not-italic text-cyan">built</em>
+          What I&apos;ve <em className="not-italic text-cyan">built</em>
         </motion.h2>
       </div>
       <motion.div

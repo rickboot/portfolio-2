@@ -5,9 +5,10 @@ import { motion } from 'framer-motion'
 interface ExperienceItem {
   years: string
   title: string
-  description: string
+  description?: string
   company: string
   engineering?: boolean
+  subRoles?: { company: string; description: string }[]
 }
 
 const experiences: ExperienceItem[] = [
@@ -15,28 +16,28 @@ const experiences: ExperienceItem[] = [
     years: 'Dec 2025 — Present',
     title: 'Product Marketing Leader, AI Infrastructure',
     description:
-      'Go-to-market for aiDAPTIV+ memory elasticity platform. Technical demos, benchmark tooling, and ISV partnership proof materials. GTC 2026 launch planning, competitive intelligence from CES keynotes.',
+      'Leading messaging and go-to-market strategy for the aiDAPTIV+ AI memory elasticity platform. Driving a 2026 GTM refresh focused on clearer problem framing, use-case articulation, and competitive differentiation. Working cross-functionally with technical marketing, engineering, and partner teams to improve demo narratives, benchmark interpretation, and proof-point clarity, ensuring external messaging aligns with actual product behavior and market expectations.',
     company: 'Phison',
   },
   {
     years: 'Jan 2024 — Jan 2025',
     title: 'Product & Go-to-Market Advisor',
     description:
-      'Repositioned MVP into a generative AI marketing platform for small businesses, driving company pivot and renewed investor interest. Defined PRDs, roadmap, and LLM-powered workflows with ML and engineering teams. Messaging and positioning for AI campaign automation — A/B testing, budget allocation, channel mix. Supported alpha delivery used by pilot merchants generating live campaigns across Meta.',
+      'Advised on product definition and go-to-market strategy for an early generative AI marketing MVP. Worked with founders, ML, and engineering teams to clarify target use cases, define product requirements, and shape LLM-powered workflow concepts. Contributed messaging and positioning guidance for AI-assisted campaign planning and automation ahead of a planned launch.',
     company: 'Solver AI',
   },
   {
     years: 'Jun 2021 — Jun 2022',
     title: 'Director of Marketing, Deep Learning Infrastructure',
     description:
-      'Go-to-market and demand generation for GPU cloud and AI infrastructure, managing a $3M annual marketing budget. Launched Tensorbook AI workstation with coordinated PR across Digital Trends, TechRepublic, NotebookCheck. Initiated technical influencer partnerships with Lex Fridman and Jeff Geerling to build developer and researcher demand.',
+      'Led go-to-market and demand generation for GPU cloud services and AI infrastructure, managing a $3M annual marketing budget. Mentored and supported the PMM who owned the Tensorbook AI workstation launch, contributing GTM guidance, messaging review, and launch strategy input. Established technical influencer partnerships to build awareness and credibility with developers, researchers, and AI practitioners.',
     company: 'Lambda Labs',
   },
   {
     years: 'Jan 2021 — Jul 2021',
     title: 'Mobile Software Engineer',
     description:
-      'Cross-platform iOS/Android application — Flutter and Firebase in an early-stage startup environment.',
+      'Worked as a mobile software engineer on a cross-platform iOS and Android application using Flutter and Firebase. Collaborated closely with product and design in an early-stage startup environment to ship production features and stabilize core application workflows.',
     company: 'Revery Labs',
     engineering: true,
   },
@@ -44,22 +45,47 @@ const experiences: ExperienceItem[] = [
     years: 'Jan 2018 — Dec 2019',
     title: 'Head of Product Marketing, HALO Autonomous Vehicle SDK',
     description:
-      'Launched SDK with API documentation and runtime tools supporting OEM autonomous vehicle pilots. Defined technical messaging and platform positioning for enterprise automotive customers.',
+      'Led product marketing for the HALO autonomous vehicle SDK, supporting OEM pilot programs with API documentation and runtime tooling. Defined technical messaging and platform positioning for enterprise automotive customers, working closely with engineering and business development teams.',
     company: 'Tensyr',
   },
   {
     years: 'Dec 2015 — Jan 2018',
     title: 'Product & Marketing Strategy Consultant',
     description:
-      'Generated 120+ media articles and 30+ product reviews through PR and influencer outreach. Built competitive positioning frameworks, messaging architectures, and GTM strategies for hardware companies.',
+      'Provided product marketing and go-to-market consulting for hardware and technology companies. Developed competitive positioning frameworks, messaging architectures, and launch strategies. Generated substantial earned media coverage through PR and influencer outreach, supporting product introductions across multiple hardware categories.',
     company: 'Independent',
   },
   {
     years: '1994 — 2008',
     title: 'Leadership — GPU, PC Hardware & Semiconductors',
-    description:
-      'Product marketing and GTM across NVIDIA, ASUS, Corsair, Trident Microsystems, and S3 Graphics. OEM partnership management, large-scale hardware launches, and semiconductor platform positioning across 14 years.',
-    company: 'NVIDIA · ASUS · Corsair · Trident · S3',
+    company: 'Legacy',
+    subRoles: [
+      {
+        company: 'NVIDIA',
+        description:
+          'Product marketing for GPU platform launches. Managed OEM relationships and coordinated go-to-market across the graphics ecosystem.',
+      },
+      {
+        company: 'ASUS',
+        description:
+          'Product strategy for motherboard and graphics card lines. Supported major hardware launches and retail positioning.',
+      },
+      {
+        company: 'CORSAIR',
+        description:
+          'Product marketing for gaming peripherals. Built competitive positioning frameworks and partner programs.',
+      },
+      {
+        company: 'TRIDENT MICROSYSTEMS',
+        description:
+          'Semiconductor platform positioning during a period of significant industry consolidation.',
+      },
+      {
+        company: 'S3 GRAPHICS',
+        description:
+          'Early-career GPU product marketing. Managed multi-million dollar programs and navigated crisis situations.',
+      },
+    ],
   },
 ]
 
@@ -85,9 +111,24 @@ function ExpItem({ exp, index }: { exp: ExperienceItem; index: number }) {
         <h3 className="font-body text-[17px] font-medium text-text mb-1.5">
           {exp.title}
         </h3>
-        <p className="text-[14px] font-light text-text-mid leading-relaxed">
-          {exp.description}
-        </p>
+        {exp.subRoles ? (
+          <div className="flex flex-col gap-6 mt-4">
+            {exp.subRoles.map((role, i) => (
+              <div key={i} className="sub-role">
+                <div className="font-mono text-[11px] text-cyan tracking-[0.06em] uppercase mb-1">
+                  {role.company}
+                </div>
+                <p className="text-[14px] font-light text-text-mid leading-relaxed">
+                  {role.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p className="text-[14px] font-light text-text-mid leading-relaxed">
+            {exp.description}
+          </p>
+        )}
       </div>
       <div className="exp-company font-mono text-[11px] text-cyan tracking-[0.06em] uppercase text-right max-md:order-[-1] max-md:text-left">
         {exp.company.includes('·') ? (

@@ -15,16 +15,15 @@ export default function About() {
           About
         </div>
         <h2 className="font-display text-[clamp(36px,5vw,58px)] leading-[1.05] text-text mb-8">
-          The rare overlap<br />
-          between <em className="not-italic text-cyan">build</em> and <em className="not-italic text-cyan">ship</em>
+          <em className="not-italic text-cyan">build</em> meets <em className="not-italic text-cyan">ship</em>
         </h2>
-        <div className="relative w-36 h-36 max-md:w-32 max-md:h-32 rounded-lg overflow-hidden border border-[rgba(232,237,242,0.12)] [html.light_&]:border-[rgba(26,26,26,0.12)]">
+        <div className="relative w-[205px] h-[205px] max-md:w-[182px] max-md:h-[182px] rounded-lg overflow-hidden border border-[rgba(232,237,242,0.12)] [html.light_&]:border-[rgba(26,26,26,0.12)]">
           <Image
             src="/images/rick.png"
             alt="Rick Allen"
             fill
             className="object-cover"
-            sizes="(max-width: 768px) 128px, 144px"
+            sizes="(max-width: 768px) 182px, 205px"
           />
         </div>
       </div>

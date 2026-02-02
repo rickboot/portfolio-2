@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { IBM_Plex_Mono, Bebas_Neue, IBM_Plex_Sans } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/ThemeProvider'
+import { Analytics } from '@vercel/analytics/next'
 
 const ibmPlexMono = IBM_Plex_Mono({
   subsets: ['latin'],
@@ -38,6 +39,7 @@ export default function RootLayout({
         className={`${ibmPlexMono.variable} ${bebasNeue.variable} ${ibmPlexSans.variable} font-body antialiased`}
       >
         <ThemeProvider>{children}</ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )

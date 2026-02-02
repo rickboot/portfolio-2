@@ -58,7 +58,7 @@ export default function Hero() {
           variants={itemVariants}
           className="mt-9 max-w-[440px] text-base font-light leading-relaxed text-text-mid tracking-[0.01em]"
         >
-          20+ years across engineering and product strategy. I code, I architect, and I take products to market. AI tools accelerate the build — the product thinking is still hands-on.
+          Bridging engineering and product strategy. I code, I architect, and I take products to market. AI tools accelerate the build — the product thinking is still hands-on.
         </motion.p>
 
         {/* CTA */}

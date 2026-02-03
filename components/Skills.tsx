@@ -76,8 +76,8 @@ export default function Skills() {
             className="skill-category"
           >
             <div className="mb-5">
-              <h3 className="font-display text-2xl text-text mb-2 text-cyan-dim">{category.name}</h3>
-              <p className="font-light text-sm text-text-dim">{category.context}</p>
+              <h3 className="font-display text-2xl text-text mb-2">{category.name}</h3>
+              <p className="font-light text-sm text-text-mid">{category.context}</p>
             </div>
             <div className="flex flex-wrap gap-2.5">
               {category.items.map((skill, sIdx) => (

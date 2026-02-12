@@ -25,7 +25,7 @@ const projects: Project[] = [
   {
     title: 'Marketing Intelligence Platform',
     description:
-      "Built to solve a real problem: how do you validate that AI workloads actually create memory pressure under production conditions? This isn&apos;t a mock or a simulation — it ingests real competitive data (CES 2026 corpus, 87 documents), swaps live between Llama 3.1 and LLaVA on demand, and streams telemetry as the memory pressure builds in real time. The engineering was the means, not the point. The point was proving that multi-model AI workloads genuinely stress GPU memory in ways the market hasn&apos;t fully reckoned with yet. FastAPI backend, WebSocket streaming, RAG with context pruning, crash detection tied to real swap deltas.",
+      "Built to solve a real problem: how do you validate that AI workloads actually create memory pressure under production conditions? This isn't a mock or a simulation — it ingests real competitive data (CES 2026 corpus, 87 documents), swaps live between Llama 3.1 and LLaVA on demand, and streams telemetry as the memory pressure builds in real time. The engineering was the means, not the point. The point was proving that multi-model AI workloads genuinely stress GPU memory in ways the market hasn't fully reckoned with yet. FastAPI backend, WebSocket streaming, RAG with context pruning, crash detection tied to real swap deltas.",
     tags: ['AI', 'RAG', 'Multi-Model'],
     links: [
       { href: 'https://github.com/rickboot/mktg-rag', label: 'GitHub', icon: 'github' },

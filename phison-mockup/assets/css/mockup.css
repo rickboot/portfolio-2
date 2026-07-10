@@ -1,0 +1,192 @@
+/* Supplemental styles for the local nav mockup only — not part of the real phison.com CSS.
+   Loaded last so it can (a) wire up dropdown/offcanvas behavior that the real site's
+   Joomla/Gantry JS bundle would otherwise handle, and (b) style the new page content. */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
+
+/* ---- desktop dropdown reveal (real markup/classes, hover-driven like data-g-hover-expand) ---- */
+.g-toplevel > li.g-parent:hover > .g-dropdown,
+.g-toplevel > li.g-parent.phx-open > .g-dropdown {
+	opacity: 1 !important;
+	visibility: visible !important;
+	overflow: visible !important;
+	top: 100% !important;
+	z-index: 10 !important;
+}
+
+/* mobile offcanvas toggle is driven by toggling .g-offcanvas-open on <body> (see mockup.js) */
+
+/* inline SVG icons swapped in for the real site's Font Awesome glyphs */
+.header_search_div svg { vertical-align: middle; color: #4d4d4d; }
+.g-offcanvas-toggle svg { vertical-align: middle; }
+.g-social a { color: #fff; margin-right: 12px; display: inline-block; }
+.g-social a:hover { color: #f6921e; }
+
+/* the real site's search icon relies on position:fixed to sit next to an
+   overlay search panel we didn't reproduce here — pin it back into the nav row */
+.header_search_div > * {
+	position: static !important;
+	top: auto !important;
+	right: auto !important;
+	padding: 0 14px !important;
+}
+
+/* mockup banner: flags this as an internal mockup, not the live site */
+#phx-mockup-banner {
+	background: #132951;
+	color: #fff;
+	font-family: "roboto", "Roboto", sans-serif;
+	font-size: 13px;
+	text-align: center;
+	padding: 6px 12px;
+}
+#phx-mockup-banner strong { color: #f6921e; }
+
+/* ---- generic page sections used by the mocked-up subpages ---- */
+.phx-page-hero {
+	background: linear-gradient(135deg, #132951 0%, #1c3b6e 100%);
+	color: #fff;
+	padding: 90px 24px 70px;
+	text-align: center;
+}
+.phx-page-hero h1 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 2.6rem;
+	margin: 0 0 14px;
+}
+.phx-page-hero p {
+	font-family: "roboto", "Roboto", sans-serif;
+	font-size: 1.1rem;
+	color: #d7e0f0;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.phx-section {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 60px 24px;
+}
+.phx-section h2 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	color: #132951;
+	font-size: 1.8rem;
+	margin: 0 0 10px;
+}
+.phx-section > p.phx-lead {
+	color: #666;
+	font-size: 1.05rem;
+	max-width: 760px;
+	margin: 0 0 36px;
+}
+
+.phx-card-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+	gap: 24px;
+}
+.phx-card {
+	display: block;
+	border: 1px solid #e5e5e5;
+	border-radius: 6px;
+	padding: 26px 22px;
+	text-decoration: none;
+	transition: box-shadow .2s ease, border-color .2s ease;
+}
+.phx-card:hover {
+	border-color: #f6921e;
+	box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+.phx-card .phx-card-eyebrow {
+	color: #f6921e;
+	font-size: .75rem;
+	font-weight: 700;
+	letter-spacing: .06em;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 8px;
+}
+.phx-card h3 {
+	font-family: "Raleway", sans-serif;
+	color: #132951;
+	font-size: 1.15rem;
+	margin: 0 0 8px;
+}
+.phx-card p {
+	color: #666;
+	font-size: .92rem;
+	margin: 0;
+}
+
+.phx-btn {
+	display: inline-block;
+	border: 1px solid #132951;
+	color: #132951;
+	font-family: "roboto", "Roboto", sans-serif;
+	font-weight: 500;
+	padding: 12px 30px;
+	border-radius: 999px;
+	text-decoration: none;
+	transition: background .2s ease, color .2s ease;
+}
+.phx-btn:hover { background: #132951; color: #fff; }
+
+.phx-home-lead {
+	background: #fff;
+	background-image: radial-gradient(#e9edf3 1px, transparent 1px);
+	background-size: 22px 22px;
+	padding: 80px 24px;
+	text-align: left;
+}
+.phx-home-lead .phx-home-lead-inner { max-width: 1100px; margin: 0 auto; }
+.phx-home-lead h1 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	color: #132951;
+	font-size: 2.5rem;
+	line-height: 1.25;
+	margin: 0 0 20px;
+	max-width: 760px;
+}
+.phx-home-lead p {
+	color: #f6921e;
+	font-family: "roboto", "Roboto", sans-serif;
+	font-size: 1.05rem;
+	max-width: 620px;
+	margin: 0 0 30px;
+}
+
+.phx-stats {
+	background: #132951;
+	color: #fff;
+	padding: 50px 24px;
+}
+.phx-stats-inner { max-width: 1200px; margin: 0 auto; }
+.phx-stats-inner > p {
+	font-family: "roboto", "Roboto", sans-serif;
+	max-width: 640px;
+	font-size: 1rem;
+	color: #dfe5f0;
+	margin: 0 0 34px;
+}
+.phx-stats-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 0;
+}
+.phx-stats-grid > div {
+	border-left: 1px solid rgba(246,146,30,0.5);
+	padding: 0 24px;
+	font-family: "roboto", "Roboto", sans-serif;
+	font-size: .92rem;
+	color: #fff;
+}
+.phx-stats-grid > div:first-child { border-left: none; padding-left: 0; }
+
+@media (max-width: 700px) {
+	.phx-page-hero h1 { font-size: 1.9rem; }
+	.phx-home-lead h1 { font-size: 1.9rem; }
+	.phx-stats-grid > div { border-left: none; padding-left: 0; margin-bottom: 18px; }
+}

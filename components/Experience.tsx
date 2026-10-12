@@ -84,7 +84,7 @@ const experiences: ExperienceItem[] = [
           'Semiconductor platform positioning during a period of significant industry consolidation.',
       },
       {
-        company: 'S3 GRAPHICS',
+        company: 'S3, INC.',
         description:
           'Early-career GPU product marketing. Managed multi-million dollar programs and navigated crisis situations.',
       },

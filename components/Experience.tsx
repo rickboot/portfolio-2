@@ -17,7 +17,7 @@ const experiences: ExperienceItem[] = [
     years: 'Dec 2025 — Present',
     title: 'Senior Product Marketing Manager',
     description:
-      'Leading messaging and go-to-market strategy for the aiDAPTIV+ AI memory elasticity platform. Driving a 2026 GTM refresh focused on clearer problem framing, use-case articulation, and competitive differentiation. Working cross-functionally with technical marketing, engineering, and partner teams to improve demo narratives, benchmark interpretation, and proof-point clarity, ensuring external messaging aligns with actual product behavior and market expectations.',
+      'Leading messaging and go-to-market strategy for the aiDAPTIV AI memory elasticity platform. Working cross-functionally with technical marketing, engineering, and partner teams to improve demo narratives, benchmark interpretation, and proof-point clarity, ensuring external messaging aligns with actual product behavior and market expectations.',
     company: 'Phison Technologies',
   },
   {
@@ -31,14 +31,14 @@ const experiences: ExperienceItem[] = [
     years: 'Jun 2021 — Jun 2022',
     title: 'Director of Marketing, AI Infrastructure',
     description:
-      'Led go-to-market and demand generation for GPU cloud services and AI infrastructure, managing a $3M annual marketing budget. Mentored and supported the PMM who owned the Tensorbook AI workstation launch, contributing GTM guidance, messaging review, and launch strategy input. Established technical influencer partnerships to build awareness and credibility with developers, researchers, and AI practitioners.',
+      'Led go-to-market and demand generation for GPU cloud services and AI infrastructure, managing a $3M annual marketing budget. Mentored the PMM leading the Tensorbook laptop launch, and drove its PR and influencer programs. Established technical influencer partnerships to build awareness and credibility with developers, researchers, and AI practitioners.',
     company: 'Lambda Labs',
   },
   {
     years: 'Jan 2021 — Jul 2021',
     title: 'Mobile Software Engineer, iOS/Android',
     description:
-      'Worked as a mobile software engineer on a cross-platform iOS and Android application using Flutter and Firebase. Collaborated closely with product and design in an early-stage startup environment to ship production features and stabilize core application workflows.',
+      'Worked as a mobile software engineer on a cross-platform iOS and Android application using Flutter and Firebase. Collaborated closely with product and design in an early-stage startup environment to build and stabilize features through beta testing on TestFlight.',
     company: 'Revery Labs',
     engineering: true,
   },

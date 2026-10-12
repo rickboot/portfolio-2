@@ -52,7 +52,7 @@ const roles: Role[] = [
       'Business Development',
     ],
     bullets: [
-      'Lead product marketing for Pascari aiDAPTIV, which extends AI memory across GPU memory, system DRAM, and flash so local systems and servers can run larger AI models.',
+      'Lead product marketing for aiDAPTIV, which extends AI memory across GPU memory, system DRAM, and flash so local systems and servers can run larger AI models.',
       'Translate engineering work on LLM inference (vLLM, llama.cpp, Ollama, MoE expert offload, KV cache reuse, fine-tuning) into sales decks, web content, and whitepapers on MoE, fine-tuning, and KV cache.',
       'Help steer ISV work for the Intel AI PC collaboration with local AI software partners.',
     ],
@@ -61,7 +61,7 @@ const roles: Role[] = [
     title: 'GTM & Product Advisor (advisory engagement)',
     company: 'Solver AI',
     location: 'Sunnyvale, CA',
-    years: '2024',
+    years: '2024 — 2025',
     context: 'AI-powered marketing automation platform for e-commerce.',
     tags: ['Product Management', 'Product Marketing', 'AI'],
     bullets: [
@@ -92,7 +92,7 @@ const roles: Role[] = [
     bullets: [
       "Built Lambda's first GTM strategy and framework across product-led growth and enterprise segments.",
       'Interviewed 10+ ML engineers and students, found setup friction was the main pain point, and repositioned Tensorbook against Google Colab around pre-configured systems.',
-      'Led the Tensorbook launch with PR teams and design agencies, growing web traffic 20% and earning coverage in Digital Trends, TechRepublic, NotebookCheck, and AI/ML media.',
+      'Mentored the PMM leading the Tensorbook laptop launch, and drove its PR and influencer work with PR teams and design agencies. The launch grew web traffic 20% and earned coverage in Digital Trends, TechRepublic, NotebookCheck, and AI/ML media.',
       'Managed a $3M annual marketing budget across Google Ads, LinkedIn, content, and influencer partnerships, running campaigns hands-on and building a lead pipeline larger than hardware production capacity.',
       "Started Lambda's first creator program, including a Lex Fridman podcast sponsorship and Jeff Geerling video collaborations.",
       'Created datasheets, case studies, whitepapers, and sales enablement for enterprise customers with solutions engineering and ML teams, coordinating across 8+ departments.',
@@ -267,7 +267,7 @@ const roles: Role[] = [
       'Led the crisis response when first-silicon yields fell short. A risk-production decision resolved the yield crisis and kept customer samples on schedule for PC OEM vendor selection.',
       "Led joint validation of the Accelerated Graphics Port (AGP) initiative between Intel and S3 teams, resulting in early verification of S3's AGP implementation.",
       'Led a multi-company task force to design a common chip pinout across three business units, giving customers a migration path between all S3 graphics products.',
-      'Built a multi-product roadshow for OEM customers Intel, Packard Bell, and NEC, covering S3 graphics, audio, and core-logic products and driving a 25% sales increase.',
+      'Built a multi-product roadshow for top PC OEM customers, including Dell, HP, Intel, and Toshiba, covering S3 graphics, audio, and core-logic products and driving a 25% sales increase.',
     ],
   },
   {

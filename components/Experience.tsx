@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Button from './Button'
 
 interface ExperienceItem {
   years: string
@@ -165,6 +166,11 @@ export default function Experience() {
         {experiences.map((exp, idx) => (
           <ExpItem key={idx} exp={exp} index={idx} />
         ))}
+      </div>
+      <div className="mt-12 flex justify-center">
+        <Button href="/resume" variant="primary">
+          View full resume
+        </Button>
       </div>
     </section>
   )

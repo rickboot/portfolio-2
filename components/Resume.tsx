@@ -51,8 +51,6 @@ const roles: Role[] = [
       'AI',
       'Semiconductors',
       'Business Development',
-      'Events & Speaking',
-      'PR & Communications',
     ],
     bullets: [
       'Lead product marketing for Pascari aiDAPTIV, which extends AI memory across GPU memory, system DRAM, and flash so local systems and servers can run larger AI models.',
@@ -61,8 +59,6 @@ const roles: Role[] = [
       'Delivered MoE and fine-tuning whitepapers, published and promoted on social, and lead content for a KV cache whitepaper.',
       'Help steer ISV work for the Intel AI PC collaboration with local AI software partners.',
       'Market to PC OEMs and system integrators, and to their end customers.',
-      'Plan and run trade show programs for Computex, GTC, and FMS, including demo scripts, demo signage, and banners. Build sales decks and a Sales/BD training deck.',
-      'Run partner marketing (messaging, social, PR) for an AI platform partner.',
     ],
   },
   {
@@ -322,7 +318,7 @@ const speaking = [
   'Chair, VESA VBE/AI workgroup (Media Vision)',
   'Press tours with NVIDIA GMs, plus press and analyst relations (NVIDIA)',
   "Multiple Best of Computex awards, including Tom's Hardware (Corsair, 2012 and 2014)",
-  'Trade show programs at Computex, GTC, FMS, SuperComputing, and DoDIIS',
+  'Trade show programs at Computex, SuperComputing, and DoDIIS',
 ]
 
 const projects = [

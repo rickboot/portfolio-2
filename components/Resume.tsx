@@ -300,7 +300,7 @@ const roles: Role[] = [
     title: 'Product Marketing Manager, PC/Mac Audio and Graphics Hardware and Software',
     company: 'Media Vision',
     location: 'Fremont, CA',
-    years: '1993 — 1994',
+    years: '1991 — 1994',
     context: 'The first dedicated multimedia PC company, making PC and Mac sound and graphics cards.',
     tags: [
       'Product Marketing',
@@ -487,7 +487,7 @@ export default function Resume() {
           .
         </p>
         <p className="max-w-[680px] text-[15px] font-light leading-[1.75] text-text-mid">
-          Product marketer across semiconductors, PC hardware, and AI infrastructure since 1993. Has
+          Product marketer across semiconductors, PC hardware, and AI infrastructure since 1991. Has
           run product, partner, and enterprise marketing, PR and creator programs, trade shows, and
           demand generation, plus product management and hands-on software engineering.
         </p>

@@ -136,3 +136,28 @@
     }
   }
 }
+
+/* Print: clean black-on-white resume */
+@media print {
+  :root,
+  html.light {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --text-dim: rgba(0, 0, 0, 0.6);
+    --text-mid: rgba(0, 0, 0, 0.8);
+  }
+
+  nav,
+  footer,
+  canvas {
+    display: none !important;
+  }
+
+  .text-cyan {
+    color: #006f94 !important;
+  }
+
+  .resume {
+    padding-top: 0 !important;
+  }
+}

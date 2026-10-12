@@ -1,8 +1,12 @@
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import ThemeToggle from './ThemeToggle'
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false)
+  // Section anchors only exist on the home page
+  const base = usePathname() === '/' ? '' : '/'
 
   // Prevent scrolling when mobile menu is open
   useEffect(() => {
@@ -17,18 +21,21 @@ export default function Nav() {
   }, [isOpen])
 
   const links = [
-    { href: '#about', label: 'About' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#skills', label: 'Skills' },
-    { href: '#experience', label: 'Experience' },
-    { href: '#contact', label: 'Contact' },
+    { href: `${base}#about`, label: 'About' },
+    { href: `${base}#projects`, label: 'Projects' },
+    { href: `${base}#skills`, label: 'Skills' },
+    { href: `${base}#experience`, label: 'Experience' },
+    { href: `${base}#contact`, label: 'Contact' },
   ]
 
   return (
     <nav className="fixed top-0 left-0 w-full z-[100] px-12 py-7 flex items-center justify-between max-md:px-6 max-md:py-5 backdrop-blur-md border-b nav-border">
-      <div className="font-mono text-[13px] font-normal text-text uppercase tracking-[0.08em] relative z-[102]">
+      <Link
+        href="/"
+        className="font-mono text-[13px] font-normal text-text uppercase tracking-[0.08em] relative z-[102] no-underline"
+      >
         Rick<span className="text-cyan">.</span>Allen
-      </div>
+      </Link>
 
       {/* Desktop Navigation */}
       <div className="flex items-center gap-8 max-md:hidden">

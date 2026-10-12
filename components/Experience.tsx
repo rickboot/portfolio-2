@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Button from './Button'
 
 interface ExperienceItem {
   years: string
@@ -14,21 +15,21 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
   {
     years: 'Dec 2025 — Present',
-    title: 'Product Marketing Leader, AI Infrastructure',
+    title: 'Senior Product Marketing Manager',
     description:
       'Leading messaging and go-to-market strategy for the aiDAPTIV+ AI memory elasticity platform. Driving a 2026 GTM refresh focused on clearer problem framing, use-case articulation, and competitive differentiation. Working cross-functionally with technical marketing, engineering, and partner teams to improve demo narratives, benchmark interpretation, and proof-point clarity, ensuring external messaging aligns with actual product behavior and market expectations.',
     company: 'Phison',
   },
   {
     years: 'Jan 2024 — Jan 2025',
-    title: 'Product & Go-to-Market Advisor',
+    title: 'GTM & Product Advisor',
     description:
       'Advised on product definition and go-to-market strategy for an early generative AI marketing MVP. Worked with founders, ML, and engineering teams to clarify target use cases, define product requirements, and shape LLM-powered workflow concepts. Contributed messaging and positioning guidance for AI-assisted campaign planning and automation ahead of a planned launch.',
     company: 'Solver AI',
   },
   {
     years: 'Jun 2021 — Jun 2022',
-    title: 'Director of Marketing, Deep Learning Infrastructure',
+    title: 'Director of Marketing, AI Infrastructure',
     description:
       'Led go-to-market and demand generation for GPU cloud services and AI infrastructure, managing a $3M annual marketing budget. Mentored and supported the PMM who owned the Tensorbook AI workstation launch, contributing GTM guidance, messaging review, and launch strategy input. Established technical influencer partnerships to build awareness and credibility with developers, researchers, and AI practitioners.',
     company: 'Lambda Labs',
@@ -56,6 +57,13 @@ const experiences: ExperienceItem[] = [
     company: 'Independent',
   },
   {
+    years: '2012 — 2015',
+    title: 'Director of Marketing, PR, Influencer Marketing, and Demand Generation',
+    description:
+      'Led marketing, PR, and creator programs for PC gaming hardware, with 5 direct reports and 9 regional coordinators. Moved review samples to YouTube creators such as Linus Tech Tips, growing per-video views from 50K to 600K+, and ran a review program that won 547 awards in 2013.',
+    company: 'Corsair',
+  },
+  {
     years: '1994 — 2008',
     title: 'Leadership — GPU, PC Hardware & Semiconductors',
     company: 'Legacy',
@@ -69,11 +77,6 @@ const experiences: ExperienceItem[] = [
         company: 'ASUS',
         description:
           'Product strategy for motherboard and graphics card lines. Supported major hardware launches and retail positioning.',
-      },
-      {
-        company: 'CORSAIR',
-        description:
-          'Product marketing for gaming peripherals. Built competitive positioning frameworks and partner programs.',
       },
       {
         company: 'TRIDENT MICROSYSTEMS',
@@ -165,6 +168,16 @@ export default function Experience() {
         {experiences.map((exp, idx) => (
           <ExpItem key={idx} exp={exp} index={idx} />
         ))}
+      </div>
+      <div className="mt-12 flex flex-col items-center gap-6 text-center">
+        <p className="max-w-[640px] text-[14px] font-light text-text-mid leading-relaxed">
+          My background is diverse: product marketing, solutions marketing, PR and communications,
+          events, BD, and software engineering, across semiconductors, PC hardware, consumer
+          electronics, and AI infrastructure. For the full picture, see the long resume.
+        </p>
+        <Button href="/resume" variant="primary">
+          Long resume →
+        </Button>
       </div>
     </section>
   )

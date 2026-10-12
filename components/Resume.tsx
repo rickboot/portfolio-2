@@ -44,17 +44,15 @@ const roles: Role[] = [
     context:
       'US arm of Phison, a NAND flash controller and storage solutions company expanding into AI infrastructure and local AI.',
     scope:
-      'Product marketing for AI memory and private AI products, sold to PC OEMs, system integrators, and enterprises.',
+      'Product marketing for AI memory products, sold to PC OEMs, system integrators, and enterprises.',
     tags: [
       'Product Marketing',
-      'Solutions Marketing',
       'AI',
       'Semiconductors',
       'Business Development',
     ],
     bullets: [
       'Lead product marketing for Pascari aiDAPTIV, which extends AI memory across GPU memory, system DRAM, and flash so local systems and servers can run larger AI models.',
-      'Wrote the product brief, ideal customer profile, and GTM brief for a new private enterprise AI platform, and defined target customers and positioning for its GenAI business intelligence offering.',
       'Translate engineering work on LLM inference (vLLM, llama.cpp, Ollama, MoE expert offload, KV cache reuse, fine-tuning) into sales decks, web content, and whitepapers on MoE, fine-tuning, and KV cache.',
       'Help steer ISV work for the Intel AI PC collaboration with local AI software partners.',
     ],
@@ -258,7 +256,7 @@ const roles: Role[] = [
       'Led the crisis response for the $25M ViRGE GX2 program. A risk-production decision resolved a yield crisis and kept customer samples on schedule for PC OEM vendor selection.',
       "Led S3's joint validation of the new AGP graphics interface standard with Intel.",
       'Led a multi-company task force to design a common chip pinout across three business units, easing customer migration.',
-      'Built a multi-product roadshow for top PC OEM customers, including Dell, HP, Intel, and Toshiba.',
+      'Built a multi-product roadshow for top PC OEM customers, including Dell, HP, Intel, and Toshiba, driving a 25% sales increase.',
     ],
   },
   {
@@ -277,7 +275,7 @@ const roles: Role[] = [
       'Team Leadership',
     ],
     bullets: [
-      "Led research and development of Trident's first 3D graphics processors.",
+      "Led research and development of Trident's first 3D graphics processors, driving a 15% revenue increase.",
       'Led product teams across marketing, sales, operations, and engineering that delivered over $50M of products per year.',
       'Supported design wins with PC OEMs: built technical presentations, met OEM engineering and product teams, gathered integration feedback, and managed design-in phases.',
       'Implemented a six-phase stage-gate development process for $50M/year semiconductor programs. It kept programs on requirements and schedule, and laid the foundation for the ISO certification PC OEMs were starting to require.',
@@ -315,7 +313,7 @@ const highlights = [
   },
   {
     name: 'Speaking & industry',
-    text: "Panelist at Microprocessor Report's PC Tech Forum. Spoke at PAX and the Intel Channel Conference. Chaired the VESA VBE/AI workgroup.",
+    text: "Panelist at Microprocessor Report's PC Tech Forum. Spoke at PAX, MML, AMD graphics launches, and the Intel Channel Conference. Chaired the VESA VBE/AI workgroup.",
   },
   {
     name: 'Team leadership',

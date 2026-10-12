@@ -57,6 +57,13 @@ const experiences: ExperienceItem[] = [
     company: 'Independent',
   },
   {
+    years: '2012 — 2015',
+    title: 'Director of Marketing, PR, Influencer Marketing, and Demand Generation',
+    description:
+      'Led marketing, PR, and creator programs for PC gaming hardware, with 5 direct reports and 9 regional coordinators. Moved review samples to YouTube creators such as Linus Tech Tips, growing per-video views from 50K to 600K+, and ran a review program that won 547 awards in 2013.',
+    company: 'Corsair',
+  },
+  {
     years: '1994 — 2008',
     title: 'Leadership — GPU, PC Hardware & Semiconductors',
     company: 'Legacy',
@@ -70,11 +77,6 @@ const experiences: ExperienceItem[] = [
         company: 'ASUS',
         description:
           'Product strategy for motherboard and graphics card lines. Supported major hardware launches and retail positioning.',
-      },
-      {
-        company: 'CORSAIR',
-        description:
-          'Product marketing for gaming peripherals. Built competitive positioning frameworks and partner programs.',
       },
       {
         company: 'TRIDENT MICROSYSTEMS',

@@ -15,21 +15,21 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
   {
     years: 'Dec 2025 — Present',
-    title: 'Product Marketing Leader, AI Infrastructure',
+    title: 'Senior Product Marketing Manager',
     description:
       'Leading messaging and go-to-market strategy for the aiDAPTIV+ AI memory elasticity platform. Driving a 2026 GTM refresh focused on clearer problem framing, use-case articulation, and competitive differentiation. Working cross-functionally with technical marketing, engineering, and partner teams to improve demo narratives, benchmark interpretation, and proof-point clarity, ensuring external messaging aligns with actual product behavior and market expectations.',
     company: 'Phison',
   },
   {
     years: 'Jan 2024 — Jan 2025',
-    title: 'Product & Go-to-Market Advisor',
+    title: 'GTM & Product Advisor',
     description:
       'Advised on product definition and go-to-market strategy for an early generative AI marketing MVP. Worked with founders, ML, and engineering teams to clarify target use cases, define product requirements, and shape LLM-powered workflow concepts. Contributed messaging and positioning guidance for AI-assisted campaign planning and automation ahead of a planned launch.',
     company: 'Solver AI',
   },
   {
     years: 'Jun 2021 — Jun 2022',
-    title: 'Director of Marketing, Deep Learning Infrastructure',
+    title: 'Director of Marketing, AI Infrastructure',
     description:
       'Led go-to-market and demand generation for GPU cloud services and AI infrastructure, managing a $3M annual marketing budget. Mentored and supported the PMM who owned the Tensorbook AI workstation launch, contributing GTM guidance, messaging review, and launch strategy input. Established technical influencer partnerships to build awareness and credibility with developers, researchers, and AI practitioners.',
     company: 'Lambda Labs',

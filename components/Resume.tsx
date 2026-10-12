@@ -55,10 +55,8 @@ const roles: Role[] = [
     bullets: [
       'Lead product marketing for Pascari aiDAPTIV, which extends AI memory across GPU memory, system DRAM, and flash so local systems and servers can run larger AI models.',
       'Wrote the product brief, ideal customer profile, and GTM brief for a new private enterprise AI platform, and defined target customers and positioning for its GenAI business intelligence offering.',
-      'Translate engineering work on LLM inference (vLLM, llama.cpp, Ollama, MoE expert offload, KV cache reuse, fine-tuning) into sales decks, whitepapers, and web content.',
-      'Delivered MoE and fine-tuning whitepapers, published and promoted on social, and lead content for a KV cache whitepaper.',
+      'Translate engineering work on LLM inference (vLLM, llama.cpp, Ollama, MoE expert offload, KV cache reuse, fine-tuning) into sales decks, web content, and whitepapers on MoE, fine-tuning, and KV cache.',
       'Help steer ISV work for the Intel AI PC collaboration with local AI software partners.',
-      'Market to PC OEMs and system integrators, and to their end customers.',
     ],
   },
   {
@@ -69,12 +67,10 @@ const roles: Role[] = [
     context: 'AI-powered marketing automation platform for e-commerce.',
     tags: ['Product Management', 'Product Marketing', 'AI'],
     bullets: [
-      'Led repositioning from a chat-based shopping assistant to an AI-native marketing automation platform, based on competitive analysis of leading AI marketing platforms.',
-      'Identified an underserved direct-to-merchant segment through market research.',
+      'Led repositioning from a chat-based shopping assistant to an AI-native marketing automation platform, based on competitive analysis and market research that found an underserved direct-to-merchant segment.',
       'Wrote the PRD, functional specs, and an 18-month roadmap that moved engineering focus to the core GenAI features needed for investor demos, including multi-channel campaign creation and automated optimization.',
-      'Defined LLM-powered workflows for automated ad generation and prompt orchestration with ML engineers. Sourced training data and refined AI outputs through iterative prompt testing.',
+      'Defined LLM-powered workflows for automated ad generation and prompt orchestration with ML engineers.',
       'Developed the investor pitch deck and coached the CEO on positioning and delivery.',
-      'Set PM and designer responsibilities, and oversaw web copy, onboarding UX, and investor messaging for the repositioning.',
     ],
   },
   {
@@ -84,7 +80,7 @@ const roles: Role[] = [
     years: '2021 — 2022',
     context: 'GPU cloud and AI/ML computing infrastructure provider.',
     scope:
-      "$3M annual marketing budget. Hired and managed Lambda's first product marketing manager.",
+      "$3M annual marketing budget. Hired and mentored Lambda's first product marketing manager, who was leading projects independently within three months.",
     tags: [
       'Product Marketing',
       'Solutions Marketing',
@@ -101,7 +97,6 @@ const roles: Role[] = [
       'Led the Tensorbook launch with PR teams and design agencies, growing web traffic 20% and earning coverage in Digital Trends, TechRepublic, NotebookCheck, and AI/ML media.',
       'Managed a $3M annual marketing budget across Google Ads, LinkedIn, content, and influencer partnerships, running campaigns hands-on and building a lead pipeline larger than hardware production capacity.',
       "Started Lambda's first creator program, including a Lex Fridman podcast sponsorship and Jeff Geerling video collaborations.",
-      "Mentored Lambda's first PMM, who was leading projects independently within three months.",
       'Created datasheets, case studies, whitepapers, and sales enablement for enterprise customers with solutions engineering and ML teams, coordinating across 8+ departments.',
       'Adapted event strategy for SuperComputing and DoDIIS to virtual and hybrid formats during COVID-19.',
     ],
@@ -114,8 +109,7 @@ const roles: Role[] = [
     context: 'VC-funded mobile wellness app startup backed by August Capital.',
     tags: ['Software Engineering'],
     bullets: [
-      'Developed an iOS/Android wellness app with Flutter/Dart and Firebase, including Rive animations and refactored navigation, through beta testing.',
-      'Integrated the Rive animation library through a major version migration, working directly with the Rive team.',
+      'Developed an iOS/Android wellness app with Flutter/Dart and Firebase through beta testing, including refactored navigation and Rive animations integrated through a major version migration with the Rive team.',
       'Built back-end services with Firebase authentication and Cloud Firestore.',
     ],
   },
@@ -130,7 +124,6 @@ const roles: Role[] = [
       'Developed and launched an SDK with API documentation and runtime tools, supporting OEM pilots with partners including Mercedes and Bosch.',
       'Supported business development with automotive partners on technical requirements and platform positioning.',
       'Created product messaging, license agreements, proposals, and technical presentations for enterprise customers.',
-      'Partnered with engineering and business development on technical integration and customer success.',
     ],
   },
   {
@@ -153,7 +146,6 @@ const roles: Role[] = [
       'Generated 120+ articles and 30+ product reviews through PR and creator outreach.',
       'Developed manufacturing partnerships in China and coordinated Computex participation, reducing production costs by 20%+.',
       'Repaired pre-production RGB lighting demos overnight at Computex, saving 30+ press meetings.',
-      'Set up standard messaging frameworks and content processes across product lines, and guided software contractors on UI/UX improvements for peripheral software.',
     ],
   },
   {
@@ -190,6 +182,7 @@ const roles: Role[] = [
     location: 'Santa Clara, CA',
     years: '2006 — 2008',
     context: 'Graphics processing and AI computing company.',
+    scope: 'Product PR for notebook GPUs, HD video, and software partners.',
     tags: [
       'PR & Communications',
       'Business Development',
@@ -199,7 +192,6 @@ const roles: Role[] = [
     ],
     bullets: [
       'Created a partner value-exchange program (benchmark labs, reviewer guides, and support in return for branding compliance and samples). Won quick buy-in from Dell and HP, then extended it to Toshiba, Sony, and Gateway.',
-      'Managed product PR for notebook GPUs, HD video, and software partners.',
       'Coordinated PR across Europe and Latin America, with materials in 5+ languages.',
       'Created product messaging and presentations with GMs, and managed press and analyst relationships for press tours.',
       'Coordinated positioning and launch assets for major OEM design wins, marketing to PC OEMs and their consumers.',
@@ -224,8 +216,8 @@ const roles: Role[] = [
       'Paired Intel, NVIDIA, and AMD market development funds for co-funded campaigns, with each covering 50%.',
       'Created and ran the LEAP channel partner program, including multi-day partner summits for resellers and system integrators.',
       'Launched a white-box notebook program for the system integrator channel, including a dedicated website and marketing materials.',
-      'Spoke at PAX, MML, AMD graphics launches, and Intel channel events.',
-      'Coordinated North America web content with ASUS HQ in Taiwan, and led crisis communications.',
+      'Spoke at PAX, MML, AMD graphics launches, and the Intel Channel Conference.',
+      'Led crisis communications for challenging press situations.',
     ],
   },
   {
@@ -234,11 +226,11 @@ const roles: Role[] = [
     location: 'Oakland, CA',
     years: '2000 — 2002',
     context: 'Internet music platform and recommendation startup.',
+    scope: 'Managed a UI designer and customer support staff.',
     tags: ['Product Management', 'Business Development'],
     bullets: [
       'Built a playlist-based music discovery platform with a 3-panel browsing interface and early AJAX features.',
       'Supported business development with major music labels on technical requirements and platform positioning.',
-      'Managed a UI designer and customer support staff.',
     ],
   },
   {
@@ -267,8 +259,6 @@ const roles: Role[] = [
       "Led S3's joint validation of the new AGP graphics interface standard with Intel.",
       'Led a multi-company task force to design a common chip pinout across three business units, easing customer migration.',
       'Built a multi-product roadshow for top PC OEM customers, including Dell, HP, Intel, and Toshiba.',
-      'Balanced shared engineering resources between two business units with competing timelines, escalating trade-offs to GMs.',
-      'Ran the program within an ISO 9001 quality system.',
     ],
   },
   {
@@ -310,8 +300,39 @@ const roles: Role[] = [
   },
 ]
 
+const highlights = [
+  {
+    name: 'Semiconductor programs',
+    text: 'Led product teams delivering $50M+ a year of graphics chips at Trident. Led the crisis response that kept the $25M ViRGE GX2 program on schedule at S3, and led its joint validation of the new AGP standard with Intel.',
+  },
+  {
+    name: 'OEM & partner BD',
+    text: "Created NVIDIA's partner value-exchange program, adopted by Dell, HP, Toshiba, Sony, and Gateway. Combined Intel, NVIDIA, and AMD market development funds into co-funded ASUS campaigns.",
+  },
+  {
+    name: 'Creators & PR',
+    text: 'Grew Corsair creator video views from 50K to 600K+ per video, and ran a review program that won 547 awards in 2013.',
+  },
+  {
+    name: 'Speaking & industry',
+    text: "Panelist at Microprocessor Report's PC Tech Forum. Spoke at PAX and the Intel Channel Conference. Chaired the VESA VBE/AI workgroup.",
+  },
+  {
+    name: 'Team leadership',
+    text: 'Led 5 direct reports and 9 regional coordinators at Corsair, and 4 marketing managers and a designer at ASUS.',
+  },
+  {
+    name: 'AI infrastructure',
+    text: "Lead product marketing for Phison's aiDAPTIV AI memory platform. Built Lambda's first GTM strategy and managed its $3M annual marketing budget.",
+  },
+  {
+    name: 'Engineering',
+    text: 'Built an iOS/Android app with Flutter and Firebase, and full-stack projects with React, Next.js, and LLM APIs. Build with AI coding tools.',
+  },
+]
+
 const speaking = [
-  'Speaker at PAX, MML, AMD graphics launches, and Intel channel events (ASUS)',
+  'Speaker at PAX, MML, AMD graphics launches, and the Intel Channel Conference (ASUS)',
   "Panelist, 3D graphics panel at Microprocessor Report's PC Tech Forum (Trident)",
   'Committee member, 3D Game Consortium (Trident)',
   'Speaker at technology panels, user groups, industry analyst conferences, and sales training seminars (Media Vision)',
@@ -456,6 +477,24 @@ export default function Resume() {
           </button>
         </div>
       </motion.header>
+
+      {/* Highlights */}
+      <section className="mb-20">
+        <SectionLabel>Highlights</SectionLabel>
+        <div className="flex flex-col gap-6">
+          {highlights.map((h) => (
+            <div
+              key={h.name}
+              className="grid grid-cols-[200px_1fr] gap-6 max-md:grid-cols-1 max-md:gap-1.5 break-inside-avoid"
+            >
+              <h3 className="font-mono text-[11px] text-cyan tracking-[0.06em] uppercase pt-1">
+                {h.name}
+              </h3>
+              <p className="text-[14px] font-light text-text-mid leading-relaxed">{h.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* Breadth */}
       <section className="mb-20 print:hidden">

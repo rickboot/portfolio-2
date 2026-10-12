@@ -367,7 +367,7 @@ const speaking = [
   'Steering committee, 3D Game Consortium (Trident)',
   'Speaker at technology panels, user groups, industry analyst conferences, and sales training seminars (Media Vision)',
   'Chair, VESA VBE/AI workgroup (Media Vision)',
-  'Press tours with NVIDIA GMs, plus press and analyst relations (NVIDIA)',
+  'Press and analyst relations for press tours, with messaging and presentations built with GMs (NVIDIA)',
   "Multiple Best of Computex awards, including Tom's Hardware (Corsair, 2012 and 2014)",
   'Trade show programs at Computex, SuperComputing, and DoDIIS',
 ]

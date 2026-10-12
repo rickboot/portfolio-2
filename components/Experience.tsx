@@ -18,11 +18,11 @@ const experiences: ExperienceItem[] = [
     title: 'Senior Product Marketing Manager',
     description:
       'Leading messaging and go-to-market strategy for the aiDAPTIV+ AI memory elasticity platform. Driving a 2026 GTM refresh focused on clearer problem framing, use-case articulation, and competitive differentiation. Working cross-functionally with technical marketing, engineering, and partner teams to improve demo narratives, benchmark interpretation, and proof-point clarity, ensuring external messaging aligns with actual product behavior and market expectations.',
-    company: 'Phison',
+    company: 'Phison Technologies',
   },
   {
     years: 'Jan 2024 — Jan 2025',
-    title: 'GTM & Product Advisor',
+    title: 'GTM & Product Advisor (advisory engagement)',
     description:
       'Advised on product definition and go-to-market strategy for an early generative AI marketing MVP. Worked with founders, ML, and engineering teams to clarify target use cases, define product requirements, and shape LLM-powered workflow concepts. Contributed messaging and positioning guidance for AI-assisted campaign planning and automation ahead of a planned launch.',
     company: 'Solver AI',
@@ -36,7 +36,7 @@ const experiences: ExperienceItem[] = [
   },
   {
     years: 'Jan 2021 — Jul 2021',
-    title: 'Mobile Software Engineer',
+    title: 'Mobile Software Engineer, iOS/Android',
     description:
       'Worked as a mobile software engineer on a cross-platform iOS and Android application using Flutter and Firebase. Collaborated closely with product and design in an early-stage startup environment to ship production features and stabilize core application workflows.',
     company: 'Revery Labs',
@@ -51,10 +51,10 @@ const experiences: ExperienceItem[] = [
   },
   {
     years: 'Dec 2015 — Jan 2018',
-    title: 'Product & Marketing Strategy Consultant',
+    title: 'Product and Marketing Strategy Consultant',
     description:
       'Provided product marketing and go-to-market consulting for hardware and technology companies. Developed competitive positioning frameworks, messaging architectures, and launch strategies. Generated substantial earned media coverage through PR and influencer outreach, supporting product introductions across multiple hardware categories.',
-    company: 'Independent',
+    company: 'Independent Consulting',
   },
   {
     years: '2012 — 2015',
@@ -71,22 +71,22 @@ const experiences: ExperienceItem[] = [
       {
         company: 'NVIDIA',
         description:
-          'Product marketing for GPU platform launches. Managed OEM relationships and coordinated go-to-market across the graphics ecosystem.',
+          'Product PR and partner marketing for notebook GPUs and HD video. Created a partner program adopted by Dell, HP, Toshiba, Sony, and Gateway.',
       },
       {
         company: 'ASUS',
         description:
-          'Product strategy for motherboard and graphics card lines. Supported major hardware launches and retail positioning.',
+          'Led North American marketing and channel partner programs for PC hardware, including co-funded campaigns with Intel, NVIDIA, and AMD.',
       },
       {
         company: 'TRIDENT MICROSYSTEMS',
         description:
-          'Semiconductor platform positioning during a period of significant industry consolidation.',
+          "Led marketing for Trident's first 3D graphics processors, and product teams delivering over $50M of products a year.",
       },
       {
         company: 'S3, INC.',
         description:
-          'Early-career GPU product marketing. Managed multi-million dollar programs and navigated crisis situations.',
+          'Managed the $25M ViRGE/GX2 graphics chip program through a yield crisis, and led AGP validation with Intel.',
       },
     ],
   },

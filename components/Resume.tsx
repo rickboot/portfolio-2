@@ -247,16 +247,18 @@ const roles: Role[] = [
   },
   {
     title: 'Senior Product Marketing Manager, 3D Graphics and Video',
-    company: 'S3 Graphics',
+    company: 'S3, Inc.',
     location: 'Santa Clara, CA',
     years: '1996 — 1997',
-    context: '3D/2D graphics accelerator semiconductors.',
+    context: 'At the time, the leading maker of 3D and 2D graphics accelerators.',
+    scope: 'Led product management of ViRGE/GX2, the first graphics chip with TV output.',
     tags: ['Product Marketing', 'Semiconductors', 'Business Development', 'Program Management'],
     bullets: [
-      'Led the crisis response for the $25M ViRGE GX2 program. A risk-production decision resolved a yield crisis and kept customer samples on schedule for PC OEM vendor selection.',
-      "Led S3's joint validation of the new AGP graphics interface standard with Intel.",
-      'Led a multi-company task force to design a common chip pinout across three business units, easing customer migration.',
-      'Built a multi-product roadshow for top PC OEM customers, including Dell, HP, Intel, and Toshiba, driving a 25% sales increase.',
+      'Managed market development of the $25M ViRGE/GX2 program, developed jointly across two business units, and built positioning that set the chip apart at launch.',
+      'Led the crisis response when first-silicon yields fell short. A risk-production decision resolved the yield crisis and kept customer samples on schedule for PC OEM vendor selection.',
+      "Led joint validation of the Accelerated Graphics Port (AGP) initiative between Intel and S3 teams, resulting in early verification of S3's AGP implementation.",
+      'Led a multi-company task force to design a common chip pinout across three business units, giving customers a migration path between all S3 graphics products.',
+      'Built a multi-product roadshow for OEM customers Intel, Packard Bell, and NEC, covering S3 graphics, audio, and core-logic products and driving a 25% sales increase.',
     ],
   },
   {
@@ -301,7 +303,7 @@ const roles: Role[] = [
 const highlights = [
   {
     name: 'Semiconductor programs',
-    text: 'Led product teams delivering $50M+ a year of graphics chips at Trident. Led the crisis response that kept the $25M ViRGE GX2 program on schedule at S3, and led its joint validation of the new AGP standard with Intel.',
+    text: 'Led product teams delivering $50M+ a year of graphics chips at Trident. Led the crisis response that kept the $25M ViRGE/GX2 program on schedule at S3, and led joint validation of the new AGP standard with Intel.',
   },
   {
     name: 'OEM & partner BD',

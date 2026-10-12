@@ -167,9 +167,14 @@ export default function Experience() {
           <ExpItem key={idx} exp={exp} index={idx} />
         ))}
       </div>
-      <div className="mt-12 flex justify-center">
+      <div className="mt-12 flex flex-col items-center gap-6 text-center">
+        <p className="max-w-[640px] text-[14px] font-light text-text-mid leading-relaxed">
+          My background is diverse: product marketing, solutions marketing, PR and communications,
+          events, BD, and software engineering, across semiconductors, PC hardware, consumer
+          electronics, and AI infrastructure. For the full picture, see the long resume.
+        </p>
         <Button href="/resume" variant="primary">
-          View full resume
+          Long resume →
         </Button>
       </div>
     </section>

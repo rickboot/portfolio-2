@@ -25,7 +25,6 @@ export default function Nav() {
     { href: `${base}#projects`, label: 'Projects' },
     { href: `${base}#skills`, label: 'Skills' },
     { href: `${base}#experience`, label: 'Experience' },
-    { href: '/resume', label: 'Resume' },
     { href: `${base}#contact`, label: 'Contact' },
   ]
 

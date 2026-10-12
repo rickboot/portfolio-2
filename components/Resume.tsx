@@ -180,7 +180,8 @@ const roles: Role[] = [
     location: 'Santa Clara, CA',
     years: '2006 — 2008',
     context: 'Graphics processing and AI computing company.',
-    scope: 'Product PR for notebook GPUs, HD video, and software partners.',
+    scope:
+      'Global product PR and branding for notebook GPUs, HD video, and strategic partners including HP, Dell, Intel, and top software developers.',
     tags: [
       'PR & Communications',
       'Business Development',
@@ -189,10 +190,11 @@ const roles: Role[] = [
       'Product Marketing',
     ],
     bullets: [
-      'Created a partner value-exchange program (benchmark labs, reviewer guides, and support in return for branding compliance and samples). Won quick buy-in from Dell and HP, then extended it to Toshiba, Sony, and Gateway.',
-      'Coordinated PR across Europe and Latin America, with materials in 5+ languages.',
+      'Created a partner value-exchange program (benchmark labs, reviewer guides, and support in return for branding compliance and samples). Won quick buy-in from Dell and HP, then extended it to Toshiba, Sony, and Gateway, increasing adoption of NVIDIA messaging and brand elements in partner marketing.',
+      "Developed consumer product messaging and branding for PC OEM partners' marketing programs.",
+      'Created PR campaign strategies and assets, and drove programs worldwide with regional teams, agencies, and partners, including Europe and Latin America with materials in 5+ languages.',
       'Created product messaging and presentations with GMs, and managed press and analyst relationships for press tours.',
-      'Coordinated positioning and launch assets for major OEM design wins, marketing to PC OEMs and their consumers.',
+      'Coordinated positioning and launch assets for major OEM design wins.',
     ],
   },
   {
@@ -200,8 +202,9 @@ const roles: Role[] = [
     company: 'ASUS',
     location: 'Fremont, CA',
     years: '2003 — 2006',
-    context: 'Global computer hardware and electronics maker.',
-    scope: 'Led a team of 4 marketing managers and a designer. Main partner contact for Intel, AMD, and NVIDIA.',
+    context: 'One of the largest makers of PC hardware components and consumer electronics. North American division.',
+    scope:
+      'Led the North American marketing team of 4 marketing managers and a designer, across product marketing, marketing communications, PR, web, sales channel, and advertising for consumers, SMBs, distributors, resellers, and system builders. Main partner contact for Intel, AMD, and NVIDIA.',
     tags: [
       'Consumer Marketing',
       'PC & Gaming Hardware',
@@ -211,24 +214,28 @@ const roles: Role[] = [
       'Team Leadership',
     ],
     bullets: [
+      'Created and ran the LEAP channel partner program for resellers, system builders, and distributors, including multi-day partner summits. Increased partner promotion drove 20% sales revenue gains.',
       'Paired Intel, NVIDIA, and AMD market development funds for co-funded campaigns, with each covering 50%.',
-      'Created and ran the LEAP channel partner program, including multi-day partner summits for resellers and system integrators.',
       'Launched a white-box notebook program for the system integrator channel, including a dedicated website and marketing materials.',
       'Spoke at PAX, MML, AMD graphics launches, and the Intel Channel Conference.',
       'Led crisis communications for challenging press situations.',
     ],
   },
   {
-    title: 'Director of Product Management, Online Music',
+    title: 'Director of Product Management and Development, Online Music',
     company: 'Uplister',
     location: 'Oakland, CA',
     years: '2000 — 2002',
-    context: 'Internet music platform and recommendation startup.',
-    scope: 'Managed a UI designer and customer support staff.',
-    tags: ['Product Management', 'Business Development'],
+    context:
+      'One of the first internet music startups, pioneering playlist discovery, recommendation, sharing, and community features.',
+    scope: 'Managed UX architects, graphic designers, and customer support staff.',
+    tags: ['Product Management', 'Business Development', 'Software Engineering', 'Team Leadership'],
     bullets: [
       'Built a playlist-based music discovery platform with a 3-panel browsing interface and early AJAX features.',
+      'Led user interface designs that resulted in patent applications.',
+      'Drove new approaches to music discovery, recommendation, programming, and community building through user-generated playlists.',
       'Supported business development with major music labels on technical requirements and platform positioning.',
+      'Developed the corporate websites, and contributed HTML/CSS and JavaScript code to the consumer music web app.',
     ],
   },
   {
@@ -236,13 +243,15 @@ const roles: Role[] = [
     company: 'Aureal',
     location: 'Fremont, CA',
     years: '1998 — 1999',
-    context: 'Audio semiconductors and add-in boards for PC gaming.',
-    tags: ['Product Marketing', 'Semiconductors', 'Consumer Marketing', 'Business Development'],
+    context:
+      'Spun out of Media Vision. Maker of A3D positional sound technology and the Vortex line of sound cards and semiconductors.',
+    tags: ['Product Marketing', 'Semiconductors', 'Consumer Marketing', 'Business Development', 'Product Management'],
     bullets: [
-      'Launched $10M in audio and software products for integrator, OEM, and retail markets.',
-      'Repositioned the product line after competitive research, driving a 10% revenue increase.',
-      'Negotiated licenses for third-party software and audio technology, cutting software BOM cost by 25%.',
-      'Reached #1 in the system builder channel with a new audio card line.',
+      'Defined and launched over $10M of audio board, modem board, and standalone software products for the system integrator, PC OEM, and consumer retail markets.',
+      'Repositioned the product line based on competitive analysis, driving a 10% revenue increase, and armed sales with data to sell against competitors.',
+      'Negotiated contracts and license fees for third-party music applications, entertainment software, and audio technology, cutting software BOM cost by 25%.',
+      'Led the white-box audio card strategy that took the #1 position in the system builder channel.',
+      'Defined marketing requirements and led product management for Silo, an internet music software product.',
     ],
   },
   {
@@ -262,40 +271,61 @@ const roles: Role[] = [
     ],
   },
   {
-    title: 'Senior Product Marketing Manager, Graphics and Video',
+    title: 'Senior Product Marketing Manager, 3D/2D Graphics and Video',
     company: 'Trident Microsystems',
     location: 'Mountain View, CA',
     years: '1994 — 1996',
-    context: '2D and video accelerator semiconductors for graphics cards.',
-    scope: 'Led marketing for the new 3D graphics team. Managed two FAEs and an associate PMM.',
+    context: 'Leading maker of 2D and video accelerators for graphics cards.',
+    scope:
+      'Led marketing for the newly formed 3D graphics processor team. Managed an associate product manager and two field applications engineers.',
     tags: [
       'Product Marketing',
       'Semiconductors',
+      'Consumer Marketing',
       'Business Development',
       'Events & Speaking',
       'Program Management',
       'Team Leadership',
     ],
     bullets: [
-      "Led research and development of Trident's first 3D graphics processors, driving a 15% revenue increase.",
+      "Researched the 3D graphics market to plan and manage Trident's first consumer 3D graphics processors, driving a 15% revenue increase.",
       'Led product teams across marketing, sales, operations, and engineering that delivered over $50M of products per year.',
       'Supported design wins with PC OEMs: built technical presentations, met OEM engineering and product teams, gathered integration feedback, and managed design-in phases.',
       'Implemented a six-phase stage-gate development process for $50M/year semiconductor programs. It kept programs on requirements and schedule, and laid the foundation for the ISO certification PC OEMs were starting to require.',
-      'Built relationships with Microsoft, Intel, software vendors, and standards groups to shape emerging 3D software standards.',
-      "Spoke on the 3D graphics panel at Microprocessor Report's PC Tech Forum, and served on the 3D Game Consortium committee.",
+      'Built relationships with Microsoft, Intel, software vendors, and standards organizations to shape emerging 3D software standards.',
+      "Served on the 3D Game Consortium steering committee, and spoke on the 3D graphics panel at Microprocessor Report's 1996 PC Tech Forum.",
     ],
   },
   {
-    title: 'Product Marketing Manager, PC/Mac Audio and Graphics',
+    title: 'Product Marketing Manager, PC/Mac Audio and Graphics Hardware and Software',
     company: 'Media Vision',
     location: 'Fremont, CA',
     years: '1993 — 1994',
-    context: 'Multimedia PC/Mac hardware company.',
-    tags: ['Product Marketing', 'PC & Gaming Hardware', 'Events & Speaking', 'Business Development'],
+    context: 'The first dedicated multimedia PC company, making PC and Mac sound and graphics cards.',
+    tags: [
+      'Product Marketing',
+      'Consumer Marketing',
+      'PC & Gaming Hardware',
+      'Events & Speaking',
+      'Business Development',
+    ],
     bullets: [
-      'Chaired the VESA VBE/AI workgroup on a software audio standard.',
+      'Chaired the VESA VBE/AI workgroup to create a software audio standard for future Media Vision audio technologies.',
       'Spoke at technology panels, user groups, industry analyst conferences, and sales training seminars.',
-      'Renegotiated bundled software and driver licenses, cutting software license costs by 70%+.',
+      'Worked with advertising, market research, and package design firms on product positioning, packaging, and targeted advertising.',
+      'Negotiated licenses for bundled game software, and renegotiated driver licenses to cut software driver costs by over 70%.',
+    ],
+  },
+  {
+    title: 'Web Developer / Software Engineer',
+    company: 'Freelance',
+    location: 'San Francisco Bay Area',
+    years: '1991 — 2000',
+    context: 'Independent development work.',
+    tags: ['Software Engineering', 'PC & Gaming Hardware'],
+    bullets: [
+      'Designed and developed websites with HTML/CSS and JavaScript.',
+      'Developed installation, configuration, and diagnostic software for PC hardware in C and x86 assembly.',
     ],
   },
 ]
@@ -319,7 +349,7 @@ const highlights = [
   },
   {
     name: 'Team leadership',
-    text: 'Led 5 direct reports and 9 regional coordinators at Corsair, and 4 marketing managers and a designer at ASUS.',
+    text: 'Led 5 direct reports and 9 regional coordinators at Corsair, 4 marketing managers and a designer at ASUS, and UX and design staff at Uplister.',
   },
   {
     name: 'AI infrastructure',
@@ -327,14 +357,14 @@ const highlights = [
   },
   {
     name: 'Engineering',
-    text: 'Built an iOS/Android app with Flutter and Firebase, and full-stack projects with React, Next.js, and LLM APIs. Build with AI coding tools.',
+    text: 'Built an iOS/Android app with Flutter and Firebase, and full-stack projects with React, Next.js, and LLM APIs. Earlier wrote PC hardware utilities in C and x86 assembly. Build with AI coding tools.',
   },
 ]
 
 const speaking = [
   'Speaker at PAX, MML, AMD graphics launches, and the Intel Channel Conference (ASUS)',
-  "Panelist, 3D graphics panel at Microprocessor Report's PC Tech Forum (Trident)",
-  'Committee member, 3D Game Consortium (Trident)',
+  "Panelist, 3D graphics panel at Microprocessor Report's 1996 PC Tech Forum (Trident)",
+  'Steering committee, 3D Game Consortium (Trident)',
   'Speaker at technology panels, user groups, industry analyst conferences, and sales training seminars (Media Vision)',
   'Chair, VESA VBE/AI workgroup (Media Vision)',
   'Press tours with NVIDIA GMs, plus press and analyst relations (NVIDIA)',
